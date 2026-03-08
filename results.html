@@ -3,561 +3,155 @@
 <head>
   <script>if(location.protocol==='http:')location.replace('https://'+location.host+location.pathname+location.search)</script>
   <meta charset="UTF-8">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Results — Kay Capitals University | Verified Student Results</title>
-  <meta name="description" content="See Verified student results from Kay Capitals University. Real P&L screenshots, real broker statements, real wins from our trading community.">
-  <meta name="keywords" content="Kay Capitals results, Kay Capitals student results, Kay Capitals reviews, KCU results, trading mentorship results">
-  <link rel="canonical" href="https://kaycapitals.co/results">
-  <!-- Open Graph -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <title>Results — Kay Capitals University | Real Student Results</title>
+  <meta name="description" content="Real Kay Capitals student results. Gain screenshots, video testimonials, and proof from 1,181+ students mentored. No cherry-picking.">
+  <meta name="keywords" content="Kay Capitals results, Kay Capitals student results, KCU results, trading mentorship proof, day trading results">
+  <link rel="canonical" href="https://kaycapitals.co/results.html">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Verified Student Results — Kay Capitals University">
-  <meta property="og:description" content="Real students. Real P&L. See Verified student wins from the Kay Capitals trading community.">
-  <meta property="og:url" content="https://kaycapitals.co/results">
+  <meta property="og:title" content="Results — Kay Capitals University">
+  <meta property="og:description" content="Real students. Real results. No cherry-picking. See gain screenshots and video testimonials from KCU members.">
+  <meta property="og:url" content="https://kaycapitals.co/results.html">
   <meta property="og:image" content="https://kaycapitals.co/og-image.jpg">
   <meta property="og:site_name" content="Kay Capitals University">
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@KayCapitals">
-  <meta name="twitter:title" content="Verified Student Wins — Kay Capitals University">
-  <meta name="twitter:description" content="Real students. Real P&L. Real student trading wins.">
+  <meta name="twitter:title" content="Results — Kay Capitals University">
+  <meta name="twitter:description" content="Real students. Real results. No cherry-picking.">
   <meta name="twitter:image" content="https://kaycapitals.co/og-image.jpg">
-  <!-- Schema.org -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Student Results — Kay Capitals University",
-    "description": "Verified student trading results from Kay Capitals University community.",
-    "url": "https://kaycapitals.co/results",
-    "isPartOf": {
-      "@type": "WebSite",
-      "name": "Kay Capitals University",
-      "url": "https://kaycapitals.co"
-    }
-  }
-  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
-    /* ===== Results Page Specific Styles ===== */
+    /* === Results Page Styles === */
 
     /* Hero */
     .results-hero {
-      min-height: 70vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 8rem 0 4rem;
-      background:
-        radial-gradient(ellipse at 50% 0%, rgba(212,175,55,.12) 0%, transparent 50%),
-        radial-gradient(ellipse at 20% 80%, rgba(212,175,55,.05) 0%, transparent 40%),
-        radial-gradient(ellipse at 80% 80%, rgba(212,175,55,.05) 0%, transparent 40%);
-      position: relative;
-      overflow: hidden;
+      min-height: 60vh; display: flex; align-items: center; justify-content: center;
+      text-align: center; padding: 8rem 1.25rem 4rem;
+      background: radial-gradient(ellipse at 50% 0%, rgba(212,175,55,.08) 0%, transparent 60%);
     }
-    .results-hero::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23D4AF37' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-      opacity: 0.5;
-    }
-    .results-hero .container { position: relative; z-index: 1; }
-    .results-hero h1 {
-      font-size: clamp(2.5rem, 6vw, 4.5rem);
-      font-weight: 800;
-      line-height: 1.08;
-      margin-bottom: 1.5rem;
-      letter-spacing: -0.02em;
-    }
-    .results-hero h1 .gold { color: var(--gold); }
-    .results-hero h1 .outline {
-      -webkit-text-stroke: 2px var(--gold);
-      color: transparent;
-    }
-    .results-hero .hero-desc {
-      font-size: 1.2rem;
-      color: var(--text-muted);
-      max-width: 650px;
-      margin: 0 auto 2rem;
-      line-height: 1.6;
-    }
-    .results-hero .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      background: rgba(212,175,55,.1);
-      border: 1px solid rgba(212,175,55,.25);
-      border-radius: 50px;
-      padding: 0.5rem 1.25rem;
-      font-size: 0.85rem;
-      color: var(--gold);
-      font-weight: 600;
-      letter-spacing: 0.5px;
-      margin-bottom: 1.5rem;
-    }
-    .pulse-dot {
-      width: 8px; height: 8px;
-      background: #22c55e;
-      border-radius: 50%;
-      animation: pulse 2s infinite;
-    }
-    @keyframes pulse {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.5; transform: scale(1.5); }
-    }
+    .results-hero h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); font-weight: 800; line-height: 1.15; margin-bottom: 1rem; }
+    .results-hero h1 span { color: #D4AF37; }
+    .results-hero p { font-size: 1.15rem; color: #999; max-width: 550px; margin: 0 auto; }
 
-    /* Stats Bar */
-    .stats-bar {
-      background: var(--bg-alt);
-      border-top: 1px solid rgba(212,175,55,.1);
-      border-bottom: 1px solid rgba(212,175,55,.1);
-      padding: 3rem 0;
-      position: relative;
-      overflow: hidden;
+    /* Stats */
+    .stats-section { padding: 3rem 0 4rem; }
+    .stats-row {
+      display: flex; justify-content: center; gap: 4rem; flex-wrap: wrap;
     }
-    .stats-bar::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 50%; transform: translateX(-50%);
-      width: 80%;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(212,175,55,.4), transparent);
-    }
-    .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
-      text-align: center;
-    }
-    .stat-block {
-      position: relative;
-    }
-    .stat-block:not(:last-child)::after {
-      content: '';
-      position: absolute;
-      right: 0;
-      top: 10%;
-      height: 80%;
-      width: 1px;
-      background: rgba(212,175,55,.15);
-    }
+    .stat-item { text-align: center; }
     .stat-number {
-      font-size: clamp(2rem, 4vw, 3.2rem);
-      font-weight: 800;
-      color: var(--gold);
-      line-height: 1;
-      margin-bottom: 0.5rem;
+      font-size: clamp(2.4rem, 5vw, 3.5rem); font-weight: 800; color: #D4AF37;
+      line-height: 1.1;
     }
-    .stat-label {
-      font-size: 0.8rem;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-weight: 600;
-    }
+    .stat-label { font-size: .95rem; color: #999; margin-top: .35rem; font-weight: 500; }
 
     /* Video Testimonials */
-    .video-testimonials {
-      padding: 6rem 0;
-      background: var(--bg);
-    }
-    .video-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 2rem;
-      margin-top: 3rem;
+    .videos-section { padding: 4rem 0; }
+    .videos-section .section-header { text-align: center; margin-bottom: 3rem; }
+    .videos-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 2rem; max-width: 1100px; margin: 0 auto;
     }
     .video-card {
-      background: var(--bg-card);
-      border-radius: 12px;
-      border: 1px solid rgba(255,255,255,.06);
-      overflow: hidden;
-      transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+      background: #161616; border-radius: 8px; overflow: hidden;
+      border: 1px solid rgba(212,175,55,.1);
+      opacity: 0; transform: translateY(30px);
+      transition: opacity .6s ease, transform .6s ease;
     }
-    .video-card:hover {
-      transform: translateY(-6px);
-      border-color: rgba(212,175,55,.3);
-      box-shadow: 0 20px 60px rgba(0,0,0,.4), 0 0 40px rgba(212,175,55,.05);
+    .video-card.visible { opacity: 1; transform: translateY(0); }
+    .video-card video {
+      width: 100%; aspect-ratio: 16/9; background: #000; display: block;
     }
-    .video-embed {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
-      background: linear-gradient(135deg, #111 0%, #1a1a1a 100%);
+    .video-card .video-quote {
+      padding: 1.25rem; font-size: .92rem; color: #ccc; line-height: 1.6;
+      font-style: italic; border-top: 1px solid rgba(212,175,55,.08);
     }
-    .video-embed iframe {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      border: 0;
-    }
-    .video-embed video {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      border: 0;
-      object-fit: cover;
-    }
-    .video-placeholder-inner {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 0.75rem;
-      color: var(--text-muted);
-      font-size: 0.85rem;
-    }
-    .video-play-btn {
-      width: 64px; height: 64px;
-      border: 2px solid var(--gold);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all 0.3s ease;
-      background: rgba(212,175,55,.1);
-    }
-    .video-play-btn svg {
-      width: 24px; height: 24px;
-      fill: var(--gold);
-      margin-left: 3px;
-    }
-    .video-card:hover .video-play-btn {
-      background: var(--gold);
-      transform: scale(1.1);
-    }
-    .video-card:hover .video-play-btn svg {
-      fill: #000;
-    }
-    .video-info {
-      padding: 1rem 1.5rem;
-      text-align: center;
-    }
-    .video-info .testimonial-quote {
-      font-weight: 500;
-      font-size: 0.95rem;
-      color: var(--text-secondary);
-      font-style: italic;
-      line-height: 1.4;
-    }
+    .video-card .video-quote::before { content: "\201C"; color: #D4AF37; font-size: 1.3rem; margin-right: .2rem; }
+    .video-card .video-quote::after { content: "\201D"; color: #D4AF37; font-size: 1.3rem; margin-left: .2rem; }
 
-    /* Video Download Protection */
-    .video-embed video {
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-      pointer-events: auto;
-    }
-
-    .video-embed {
-      -webkit-user-drag: none;
-      -khtml-user-drag: none;
-      -moz-user-drag: none;
-      -o-user-drag: none;
-      user-drag: none;
-    }
-
-    /* Featured In */
-    .featured-in {
-      background: var(--bg-alt);
-      padding: 4rem 0;
-      border-top: 1px solid rgba(255,255,255,.04);
-      border-bottom: 1px solid rgba(255,255,255,.04);
-    }
-    .featured-logos {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      gap: 2.5rem;
-      margin-top: 2rem;
-    }
-    .featured-logo {
-      padding: 0.75rem 1.5rem;
-      background: rgba(255,255,255,.03);
-      border: 1px solid rgba(255,255,255,.06);
-      border-radius: var(--radius);
-      color: var(--text-muted);
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      transition: all 0.3s ease;
-      white-space: nowrap;
-    }
-    .featured-logo:hover {
-      border-color: rgba(212,175,55,.3);
-      color: var(--gold);
-      background: rgba(212,175,55,.05);
-    }
-
-    /* Student Ticker */
-    .ticker-section {
-      padding: 2.5rem 0;
-      overflow: hidden;
-      background: var(--bg);
-      border-bottom: 1px solid rgba(255,255,255,.04);
-    }
-    .ticker-track {
-      display: flex;
-      gap: 3rem;
-      animation: tickerScroll 60s linear infinite;
-      width: max-content;
-    }
-    .ticker-item {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      white-space: nowrap;
-      color: var(--text-muted);
-      font-size: 0.9rem;
-    }
-    .ticker-item .ticker-stars {
-      color: var(--gold);
-      font-size: 0.75rem;
-      letter-spacing: 1px;
-    }
-    @keyframes tickerScroll {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
-    }
-
-    /* Photo Grid — Masonry */
-    .gains-section {
-      padding: 6rem 0;
-      background: var(--bg);
-    }
-    .masonry-grid {
-      columns: 3;
-      column-gap: 16px;
-      margin-top: 3rem;
-    }
-    .masonry-item {
-      break-inside: avoid;
-      margin-bottom: 16px;
-      border-radius: 10px;
-      overflow: hidden;
-      position: relative;
-      cursor: pointer;
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-    .masonry-item.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    .masonry-item img {
-      width: 100%;
-      display: block;
-      border-radius: 10px;
-      transition: transform 0.5s ease, filter 0.5s ease;
-    }
-    .masonry-item::after {
-      content: '';
-      position: absolute;
-      inset: 0;
-      border-radius: 10px;
-      border: 1px solid rgba(255,255,255,.06);
-      pointer-events: none;
-      transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    }
-    .masonry-item:hover::after {
-      border-color: rgba(212,175,55,.3);
-      box-shadow: 0 12px 40px rgba(0,0,0,.5), 0 0 30px rgba(212,175,55,.08);
-    }
-    .masonry-item:hover img {
-      transform: scale(1.03);
-      filter: brightness(1.08);
-    }
-
-    /* Load More */
-    .load-more-wrap {
-      text-align: center;
-      margin-top: 3rem;
-    }
+    /* Load More Buttons */
+    .load-more-wrap { text-align: center; margin-top: 2.5rem; }
     .load-more-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 1rem 2.5rem;
-      background: transparent;
-      border: 2px solid var(--gold);
-      color: var(--gold);
-      font-family: var(--font);
-      font-weight: 700;
-      font-size: 0.95rem;
-      border-radius: var(--radius);
-      cursor: pointer;
-      transition: all 0.3s ease;
-      letter-spacing: 0.3px;
+      display: inline-block; padding: .75rem 2.2rem; background: transparent;
+      border: 2px solid #D4AF37; color: #D4AF37; font-family: inherit;
+      font-weight: 700; font-size: .95rem; border-radius: 8px; cursor: pointer;
+      transition: background .2s, color .2s, transform .2s; letter-spacing: .3px;
     }
-    .load-more-btn:hover {
-      background: var(--gold);
-      color: #000;
-      transform: translateY(-2px);
-      box-shadow: 0 8px 30px rgba(212,175,55,.25);
+    .load-more-btn:hover { background: #D4AF37; color: #000; transform: translateY(-2px); }
+
+    /* Photo Grid */
+    .photos-section { padding: 4rem 0; }
+    .photos-section .section-header { text-align: center; margin-bottom: 3rem; }
+    .photos-grid {
+      columns: 3; column-gap: 1rem; max-width: 1100px; margin: 0 auto;
     }
-    .load-more-btn:disabled {
-      opacity: 0.4;
-      cursor: default;
-      transform: none;
-      box-shadow: none;
+    .photo-item {
+      break-inside: avoid; margin-bottom: 1rem; border-radius: 8px; overflow: hidden;
+      cursor: pointer; position: relative;
+      opacity: 0; transform: translateY(20px);
+      transition: opacity .5s ease, transform .5s ease;
     }
-    .images-count {
-      color: var(--text-muted);
-      font-size: 0.85rem;
-      margin-top: 1rem;
+    .photo-item.visible { opacity: 1; transform: translateY(0); }
+    .photo-item img {
+      width: 100%; display: block; border-radius: 8px;
+      transition: transform .3s ease;
     }
+    .photo-item:hover img { transform: scale(1.03); }
 
     /* Lightbox */
     .lightbox {
-      display: none;
-      position: fixed;
-      inset: 0;
-      z-index: 10000;
-      background: rgba(0,0,0,.92);
-      backdrop-filter: blur(20px);
-      align-items: center;
-      justify-content: center;
-      opacity: 0;
-      transition: opacity 0.3s ease;
+      display: none; position: fixed; inset: 0; z-index: 9999;
+      background: rgba(0,0,0,.95); align-items: center; justify-content: center;
+      padding: 1rem;
     }
-    .lightbox.active {
-      display: flex;
-      opacity: 1;
-    }
+    .lightbox.open { display: flex; }
     .lightbox img {
-      max-width: 90vw;
-      max-height: 90vh;
-      border-radius: 8px;
-      box-shadow: 0 20px 80px rgba(0,0,0,.6);
-      animation: lightboxIn 0.3s ease;
-    }
-    @keyframes lightboxIn {
-      from { transform: scale(0.9); opacity: 0; }
-      to { transform: scale(1); opacity: 1; }
+      max-width: 90vw; max-height: 90vh; border-radius: 8px;
+      object-fit: contain;
     }
     .lightbox-close {
-      position: absolute;
-      top: 1.5rem;
-      right: 1.5rem;
-      width: 48px; height: 48px;
-      background: rgba(255,255,255,.1);
-      border: 1px solid rgba(255,255,255,.2);
-      border-radius: 50%;
-      color: #fff;
-      font-size: 1.5rem;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all 0.3s ease;
-      z-index: 10001;
+      position: absolute; top: 1.2rem; right: 1.5rem; background: none; border: none;
+      color: #fff; font-size: 2.2rem; cursor: pointer; z-index: 10001;
+      width: 44px; height: 44px; display: flex; align-items: center; justify-content: center;
+      transition: color .2s;
     }
-    .lightbox-close:hover {
-      background: var(--gold);
-      color: #000;
-      border-color: var(--gold);
-    }
+    .lightbox-close:hover { color: #D4AF37; }
     .lightbox-nav {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 48px; height: 48px;
-      background: rgba(255,255,255,.08);
-      border: 1px solid rgba(255,255,255,.15);
-      border-radius: 50%;
-      color: #fff;
-      font-size: 1.2rem;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all 0.3s ease;
-      z-index: 10001;
+      position: absolute; top: 50%; transform: translateY(-50%);
+      background: rgba(212,175,55,.15); border: 1px solid rgba(212,175,55,.3);
+      color: #fff; font-size: 1.6rem; cursor: pointer; z-index: 10001;
+      width: 48px; height: 48px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      transition: background .2s;
     }
-    .lightbox-nav:hover {
-      background: var(--gold);
-      color: #000;
-      border-color: var(--gold);
-    }
-    .lightbox-prev { left: 1.5rem; }
-    .lightbox-next { right: 1.5rem; }
+    .lightbox-nav:hover { background: rgba(212,175,55,.4); }
+    .lightbox-prev { left: 1rem; }
+    .lightbox-next { right: 1rem; }
 
-    /* CTA Section */
+    /* CTA */
     .cta-section {
-      padding: 8rem 0;
-      text-align: center;
-      position: relative;
-      background:
-        radial-gradient(ellipse at 50% 100%, rgba(212,175,55,.1) 0%, transparent 50%),
-        var(--bg);
+      padding: 5rem 0; text-align: center;
+      background: radial-gradient(ellipse at 50% 100%, rgba(212,175,55,.06) 0%, transparent 60%);
     }
-    .cta-section h2 {
-      font-size: clamp(2rem, 4vw, 3rem);
-      font-weight: 800;
-      margin-bottom: 1rem;
-      line-height: 1.15;
-    }
-    .cta-section h2 span { color: var(--gold); }
-    .cta-section p {
-      color: var(--text-muted);
-      font-size: 1.1rem;
-      max-width: 550px;
-      margin: 0 auto 2.5rem;
-      line-height: 1.6;
-    }
-    .cta-buttons {
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    /* Scroll animations */
-    .reveal {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: opacity 0.8s ease, transform 0.8s ease;
-    }
-    .reveal.revealed {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    .cta-section h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; margin-bottom: 1rem; }
+    .cta-section h2 span { color: #D4AF37; }
+    .cta-section p { color: #999; font-size: 1.05rem; max-width: 500px; margin: 0 auto 2rem; }
 
     /* Responsive */
-    @media (max-width: 1024px) {
-      .masonry-grid { columns: 2; }
-      .video-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+    @media (max-width: 900px) {
+      .photos-grid { columns: 2; }
+      .videos-grid { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+      .stats-row { gap: 2.5rem; }
     }
-    @media (max-width: 768px) {
-      .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1.5rem;
-      }
-      .stat-block:not(:last-child)::after { display: none; }
-      .results-hero { min-height: 60vh; padding: 7rem 0 3rem; }
-      .results-hero h1 { font-size: clamp(2rem, 8vw, 3rem); }
-      .masonry-grid { columns: 2; column-gap: 10px; }
-      .masonry-item { margin-bottom: 10px; }
-    }
-    @media (max-width: 480px) {
-      .masonry-grid { columns: 1; }
-      .stats-grid { grid-template-columns: repeat(2, 1fr); }
-      .featured-logos { gap: 1rem; }
-      .featured-logo { padding: 0.5rem 1rem; font-size: 0.7rem; }
-      .video-grid { grid-template-columns: 1fr; }
+    @media (max-width: 600px) {
+      .photos-grid { columns: 1; }
+      .videos-grid { grid-template-columns: 1fr; }
+      .results-hero { min-height: 50vh; padding: 7rem 1.25rem 3rem; }
+      .stats-row { gap: 2rem; }
+      .lightbox-nav { width: 40px; height: 40px; font-size: 1.3rem; }
     }
   </style>
 </head>
@@ -581,375 +175,242 @@
   <!-- Hero -->
   <section class="results-hero">
     <div class="container">
-      <div class="hero-badge"><span class="pulse-dot"></span> Live Community Results</div>
-      <h1>The Proof Is<br>In The <span class="gold">P&amp;L</span></h1>
-      <p class="hero-desc">Verified student wins from real traders. No cherry-picking. No fake screenshots. Just raw, unfiltered results from our trading community — posted by students themselves.</p>
-      <a href="#gains" class="btn">See The Results ↓</a>
+      <h1>The Proof Is In The <span>P&amp;L</span></h1>
+      <p>Real students. Real results. No cherry-picking.</p>
     </div>
   </section>
 
-  <!-- Stats Bar -->
-  <section class="stats-bar">
+  <!-- Stats -->
+  <section class="stats-section">
     <div class="container">
-      <div class="stats-grid">
-        <div class="stat-block reveal">
-          <div class="stat-number" data-target="1181" data-suffix="">0</div>
+      <div class="stats-row">
+        <div class="stat-item">
+          <div class="stat-number" data-target="1181" data-suffix="+">0</div>
           <div class="stat-label">Students Mentored</div>
         </div>
-
-        <div class="stat-block reveal">
-          <div class="stat-number" data-target="1" data-suffix="M+" data-prefix="">0</div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="1" data-suffix="M+" data-is-million="true">0</div>
           <div class="stat-label">Community Following</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Scrolling Student Quote Ticker -->
-  <section class="ticker-section">
-    <div class="ticker-track" id="ticker">
-      <div class="ticker-item"><span class="ticker-stars">★★★★★</span> "This program is really an absolute game changer"</div>
-      <div class="ticker-item"><span class="ticker-stars">★★★★★</span> "KCU has been extremely important in my life changing"</div>
-      <div class="ticker-item"><span class="ticker-stars">★★★★★</span> "I'm glad I made the choice to join KCU"</div>
-      <div class="ticker-item"><span class="ticker-stars">★★★★★</span> "I think it was a best decision ever made"</div>
-      <div class="ticker-item"><span class="ticker-stars">★★★★★</span> "It's far exceeded my expectations"</div>
-      <div class="ticker-item"><span class="ticker-stars">★★★★★</span> "What I have learned from KCU so far has been life changing"</div>
-      <div class="ticker-item"><span class="ticker-stars">★★★★★</span> "My level of patience has just grown so much"</div>
-      <div class="ticker-item"><span class="ticker-stars">★★★★★</span> "I was failing to stay consistent every day before KCU"</div>
-      <!-- Duplicated for infinite scroll -->
-      <div class="ticker-item"><span class="ticker-stars">★★★★★</span> "This program is really an absolute game changer"</div>
-      <div class="ticker-item"><span class="ticker-stars">★★★★★</span> "KCU has been extremely important in my life changing"</div>
-      <div class="ticker-item"><span class="ticker-stars">★★★★★</span> "I'm glad I made the choice to join KCU"</div>
-      <div class="ticker-item"><span class="ticker-stars">★★★★★</span> "I think it was a best decision ever made"</div>
-      <div class="ticker-item"><span class="ticker-stars">★★★★★</span> "It's far exceeded my expectations"</div>
-      <div class="ticker-item"><span class="ticker-stars">★★★★★</span> "What I have learned from KCU so far has been life changing"</div>
-      <div class="ticker-item"><span class="ticker-stars">★★★★★</span> "My level of patience has just grown so much"</div>
-      <div class="ticker-item"><span class="ticker-stars">★★★★★</span> "I was failing to stay consistent every day before KCU"</div>
-    </div>
-  </section>
-
   <!-- Video Testimonials -->
-  <section class="video-testimonials">
+  <section class="videos-section">
     <div class="container">
-      <div class="text-center reveal">
-        <p class="section-label">Video Testimonials</p>
-        <h2 class="section-title">Video Testimonials</h2>
-        <p class="section-subtitle">Real students sharing their real journeys inside Kay Capitals University.</p>
+      <div class="section-header">
+        <p class="section-label">Hear It From Them</p>
+        <h2 class="section-title">Student Testimonials</h2>
+        <p class="section-subtitle" style="margin:0 auto;">Unscripted. Unfiltered. Their words, not ours.</p>
       </div>
-      <div class="video-grid" id="video-grid"></div>
-      <div class="load-more-wrap">
-        <button class="load-more-btn" id="load-more-videos-btn" onclick="loadMoreVideos()">
-          Load More Videos
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="display:inline-block;vertical-align:middle;"><path d="M8 3v10M3 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="images-count" id="videos-count"></div>
+      <div class="videos-grid" id="videosGrid"></div>
+      <div class="load-more-wrap" id="videosLoadMoreWrap">
+        <button class="load-more-btn" id="videosLoadMore" onclick="loadMoreVideos()">Load More Testimonials</button>
       </div>
     </div>
   </section>
 
-  <!-- As Featured In -->
-  <section class="featured-in">
-    <div class="container text-center reveal">
-      <p class="section-label">As Featured In</p>
-      <h2 class="section-title">Recognised by Leading Publications</h2>
-      <div class="featured-logos">
-        <a href="https://www.republicworld.com/initiatives/somesh-kay-capitals-thrives-on-authenticity-real-trading-strategies-and-real-growth" target="_blank" rel="noopener" class="featured-logo">Republic World</a>
-        <a href="https://www.ibtimes.co.in/somesh-kay-capitals-creates-legacy-his-own-883007" target="_blank" rel="noopener" class="featured-logo">IBTimes</a>
-        <a href="https://techbullion.com/somesh-kay-aka-kay-capitals-rises-as-a-self-made-day-trader-and-entrepreneurial-talent/" target="_blank" rel="noopener" class="featured-logo">TechBullion</a>
-        <a href="https://ventsmagazine.com/2025/05/07/tradepreneur-somesh-kay-capitals-creates-a-success-story-from-the-ground-up/" target="_blank" rel="noopener" class="featured-logo">Vents Magazine</a>
-        <a href="https://www.netnewsledger.com/2025/05/10/standing-distinctive-with-his-unique-trading-strategies-meet-somesh-of-kay-capitals/" target="_blank" rel="noopener" class="featured-logo">NetNewsLedger</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Gains Photo Grid -->
-  <section class="gains-section" id="gains">
+  <!-- Photo Grid -->
+  <section class="photos-section">
     <div class="container">
-      <div class="text-center reveal">
-        <p class="section-label">Community Wins</p>
-        <h2 class="section-title">Student P&amp;L Screenshots</h2>
-        <p class="section-subtitle">Every single one of these was posted by a real student in our Discord. Unedited. Unfiltered.</p>
+      <div class="section-header">
+        <p class="section-label">Screenshots Don't Lie</p>
+        <h2 class="section-title">Student Gains</h2>
+        <p class="section-subtitle" style="margin:0 auto;">Real P&amp;L screenshots shared by KCU members.</p>
       </div>
-      <div class="masonry-grid" id="masonry-grid"></div>
-      <div class="load-more-wrap">
-        <button class="load-more-btn" id="load-more-btn" onclick="loadMore()">
-          Load More Results
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="display:inline-block;vertical-align:middle;"><path d="M8 3v10M3 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="images-count" id="images-count"></div>
+      <div class="photos-grid" id="photosGrid"></div>
+      <div class="load-more-wrap" id="photosLoadMoreWrap">
+        <button class="load-more-btn" id="photosLoadMore" onclick="loadMorePhotos()">Load More</button>
       </div>
     </div>
   </section>
-
-  <!-- CTA -->
-  <section class="cta-section">
-    <div class="container reveal">
-      <p class="section-label">Ready?</p>
-      <h2>Stop Watching.<br><span>Start Trading.</span></h2>
-      <p>Join 1,000+ students who are already building real trading careers. Your results could be next on this page.</p>
-      <div class="cta-buttons">
-        <a href="https://youtube.com/@KayCapitals" class="btn" target="_blank" rel="noopener">Watch Free on YouTube</a>
-        <a href="/" class="btn btn-outline">Learn About KCU</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer" role="contentinfo">
-    <div class="container">
-      <p class="footer-copy">&copy; 2026 Kay Capitals University. All rights reserved.</p>
-      <div class="social-links">
-        <a href="https://instagram.com/kaycapitals" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
-        <a href="https://youtube.com/@KayCapitals" target="_blank" rel="noopener" aria-label="YouTube">YouTube</a>
-        <a href="https://twitter.com/KayCapitals" target="_blank" rel="noopener" aria-label="X / Twitter">X</a>
-        <a href="https://facebook.com/KayCapitals" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
-      </div>
-    </div>
-  </footer>
 
   <!-- Lightbox -->
   <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
-    <button class="lightbox-close" onclick="closeLightbox(event)" aria-label="Close">✕</button>
-    <button class="lightbox-nav lightbox-prev" onclick="navigateLightbox(event, -1)" aria-label="Previous">‹</button>
-    <img src="" alt="Student Result" id="lightbox-img">
-    <button class="lightbox-nav lightbox-next" onclick="navigateLightbox(event, 1)" aria-label="Next">›</button>
+    <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close">&times;</button>
+    <button class="lightbox-nav lightbox-prev" onclick="navLightbox(event,-1)" aria-label="Previous">&#8249;</button>
+    <img id="lightboxImg" src="" alt="Student gain screenshot">
+    <button class="lightbox-nav lightbox-next" onclick="navLightbox(event,1)" aria-label="Next">&#8250;</button>
   </div>
 
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to <span>Start?</span></h2>
+      <p>Join the mentorship that's changing lives. Your future self will thank you.</p>
+      <a href="/" class="btn">Learn More</a>
+    </div>
+  </section>
+
   <script>
-    // ===== Image Data (sorted by file size — largest/most impressive first) =====
+    /* === DATA === */
+    var ALL_VIDEOS = [
+{num:10,quote:"KCU is the trading discord you want to join. I can tell anyone, you're the best discord out there."},
+{num:11,quote:"I was missing consistency in trading and I didn't really have any discipline or a set strategy. KCU changed that."},
+{num:12,quote:"KCU has been extremely important in my life — in terms of confidence and understanding how the markets go and really proving to myself that I can do this."},
+{num:13,quote:"Harping on the patience and sitting on the hands like you said has been a game changer for me. It's a night and day difference from what I've been used to."},
+{num:14,quote:"Your program has taught me so much more than technicals — a lot about my psychology, becoming a better person. It totally blew my expectations out of the water."},
+{num:15,quote:"The program absolutely crushed expectations. Account management, stop losses, discipline, patience — it's a fantastic class to become a better person."},
+{num:16,quote:"It's far exceeded my expectations. The modules are fun. You're very positive and encouraging. Best move I've ever made is getting in with you."},
+{num:17,quote:"I was always skeptical but I'm glad I made the choice to join KCU. I have learned a lot and it feels good."},
+{num:18,quote:"Joining KCU was the best decision ever in my life. I'm more confident now while taking a trade because I know what my game plan is."},
+{num:19,quote:"Most of the stuff that I do is self-learning, but for some reason I joined yours, and I think it was the best decision I ever made."},
+{num:20,quote:"In all of my broker accounts added together, I'm up about 20k since I started KCU a little over a month ago. Way better than anything I've seen."},
+{num:21,quote:"I'm just learning the system, having discipline. I'm building up a passion — I'm not just doing it because I want to make money, I really like it."},
+{num:22,quote:"I thought I knew how to trade till I joined KCU. All I was doing before was technically gambling. Now I have a real system."},
+{num:23,quote:"Last week I had a $8,000 week. The program far exceeds my expectations. You give us the tools to trade for ourselves. 10 out of 10."},
+{num:24,quote:"Today I made about $11,000 in short profits. The program has definitely exceeded my expectations in terms of the knowledge shared."},
+{num:25,quote:"Since starting KCU, my level of patience has just grown so much. Certainly the best decision that I've made in my trading career."},
+{num:26,quote:"This program is really an absolute game changer. I really wish I could have seen you earlier. KCU is the best program in the entire world."},
+{num:27,quote:"I joined KCU because it seemed like no matter where I looked, it all made sense. It was logical. It was honest. And that's why."},
+{num:28,quote:"What I have learned from KCU so far has been life changing. These are the skills that I'm going to be able to use for a lifetime."},
+{num:29,quote:"I'm glad I found KCU because this right here is gonna change my life, take me to a whole new level. I appreciate it."},
+{num:30,quote:"Your program is way better than anything I've ever seen before. I've never been so pumped and energetic about tackling the market."}
+    ];
 
-        const ALL_IMAGES = ["Photo Feb 09 2026, 11 26 21 PM.jpg", "Photo Feb 09 2026, 11 27 07 PM.jpg", "Photo Feb 09 2026, 11 27 11 PM.jpg", "Photo Feb 09 2026, 11 27 15 PM.jpg", "Photo Feb 09 2026, 11 27 21 PM.jpg", "Photo Feb 09 2026, 11 27 25 PM.jpg", "Photo Feb 09 2026, 11 27 32 PM.jpg", "Photo Feb 09 2026, 11 27 43 PM.jpg", "Photo Feb 09 2026, 11 28 05 PM.jpg", "Photo Feb 10 2026, 1 50 46 AM.jpg", "Photo Feb 10 2026, 1 50 54 AM.jpg", "Photo Feb 10 2026, 1 51 00 AM.jpg", "Photo Feb 10 2026, 1 51 10 AM.jpg", "Photo Feb 10 2026, 1 51 14 AM.jpg", "Photo Feb 10 2026, 1 51 17 AM.jpg", "Photo Feb 10 2026, 1 51 22 AM.jpg", "Photo Feb 10 2026, 1 51 30 AM.jpg", "Photo Feb 10 2026, 3 44 30 AM.jpg", "Photo Feb 10 2026, 3 44 40 AM.jpg", "Photo Feb 10 2026, 3 44 51 AM.jpg", "Photo Feb 10 2026, 3 45 00 AM.jpg", "Photo Feb 10 2026, 3 45 10 AM.jpg", "Photo Feb 10 2026, 3 45 21 AM.jpg", "Photo Feb 10 2026, 3 45 30 AM.jpg", "Photo Feb 10 2026, 3 45 41 AM.jpg", "Photo Feb 10 2026, 3 45 49 AM.jpg", "Photo Feb 10 2026, 3 45 59 AM.jpg", "Photo Feb 10 2026, 3 46 12 AM.jpg", "Photo Feb 10 2026, 3 46 33 AM.jpg", "Photo Feb 10 2026, 3 46 51 AM.jpg", "Photo Feb 10 2026, 3 46 58 AM.jpg", "Photo Feb 10 2026, 3 47 29 AM.jpg", "Photo Feb 10 2026, 3 47 46 AM.jpg", "Photo Feb 11 2026, 10 12 02 PM.jpg", "Photo Feb 11 2026, 10 12 06 PM.jpg", "Photo Feb 11 2026, 10 12 09 PM.jpg", "Photo Feb 11 2026, 10 12 13 PM.jpg", "Photo Feb 11 2026, 10 12 17 PM.jpg", "Photo Feb 11 2026, 10 12 20 PM.jpg", "Photo Feb 11 2026, 10 12 25 PM.jpg", "Photo Feb 11 2026, 10 12 28 PM.jpg", "Photo Feb 11 2026, 10 12 31 PM.jpg", "Photo Feb 11 2026, 10 12 39 PM.jpg", "Photo Feb 11 2026, 10 12 43 PM.jpg", "Photo Feb 11 2026, 10 12 47 PM.jpg", "Photo Feb 11 2026, 10 12 52 PM.jpg", "Photo Feb 11 2026, 10 12 55 PM.jpg", "Photo Feb 11 2026, 10 12 59 PM.jpg", "Photo Feb 11 2026, 10 13 04 PM.jpg", "Photo Feb 11 2026, 10 13 41 PM.jpg", "Photo Feb 11 2026, 10 13 45 PM.jpg", "Photo Feb 11 2026, 10 13 48 PM.jpg", "Photo Feb 11 2026, 10 13 52 PM.jpg", "Photo Feb 11 2026, 10 13 56 PM.jpg", "Photo Feb 11 2026, 10 14 00 PM.jpg", "Photo Feb 11 2026, 10 14 04 PM.jpg", "Photo Feb 11 2026, 10 14 07 PM.jpg", "Photo Feb 11 2026, 10 14 10 PM.jpg", "Photo Feb 11 2026, 10 14 15 PM.jpg", "Photo Feb 11 2026, 10 14 20 PM.jpg", "Photo Feb 11 2026, 10 14 43 PM.jpg", "Photo Feb 11 2026, 10 14 47 PM.jpg", "Photo Feb 11 2026, 10 14 50 PM.jpg", "Photo Feb 11 2026, 10 14 56 PM.jpg", "Photo Feb 12 2026, 8 55 51 AM.jpg", "Photo Feb 12 2026, 8 56 06 AM.jpg", "Photo Feb 12 2026, 8 56 15 AM.jpg", "Photo Feb 12 2026, 8 56 31 AM.png", "Photo Feb 12 2026, 8 56 41 AM.jpg", "Photo Feb 12 2026, 8 56 54 AM.jpg", "Photo Feb 12 2026, 8 57 02 AM.jpg", "Photo Feb 12 2026, 8 57 15 AM.jpg", "Photo Feb 12 2026, 8 57 27 AM.jpg", "Photo Feb 12 2026, 8 57 36 AM.jpg", "Photo Feb 12 2026, 8 57 45 AM.jpg", "Photo Feb 12 2026, 8 58 04 AM.jpg", "Photo Feb 12 2026, 8 58 15 AM.jpg", "Photo Feb 12 2026, 8 58 23 AM.jpg", "Photo Feb 12 2026, 8 58 33 AM.jpg", "Photo Feb 12 2026, 8 58 47 AM.jpg", "Photo Feb 12 2026, 8 59 06 AM.jpg", "Photo Feb 12 2026, 8 59 18 AM.jpg", "Photo Feb 12 2026, 8 59 26 AM.jpg", "Photo Feb 12 2026, 8 59 37 AM.jpg", "Photo Feb 12 2026, 8 59 45 AM.jpg", "Photo Feb 12 2026, 8 59 55 AM.jpg", "Photo Feb 12 2026, 9 00 08 AM.jpg", "Photo Feb 12 2026, 9 00 17 AM.jpg", "Photo Feb 12 2026, 9 00 25 AM.jpg", "Photo Feb 12 2026, 9 00 35 AM.jpg", "Photo Feb 12 2026, 9 00 43 AM.jpg", "Photo Feb 12 2026, 9 00 53 AM.jpg", "Photo Feb 12 2026, 9 01 01 AM.jpg", "Photo Feb 12 2026, 9 01 30 AM.jpg", "Photo Feb 12 2026, 9 01 41 AM.jpg", "Photo Feb 12 2026, 9 01 51 AM.jpg", "Photo Feb 12 2026, 9 02 01 AM.jpg", "Photo Feb 12 2026, 9 02 09 AM.jpg", "Photo Feb 12 2026, 9 02 19 AM.jpg", "Photo Feb 12 2026, 9 02 28 AM.jpg", "Photo Feb 12 2026, 9 02 36 AM.jpg", "Photo Feb 12 2026, 9 03 00 AM.jpg", "Photo Feb 12 2026, 9 03 08 AM.jpg", "Photo Feb 12 2026, 9 03 28 AM.jpg", "Photo Feb 12 2026, 9 03 37 AM.jpg", "Photo Feb 12 2026, 9 03 54 AM.jpg", "Photo Feb 12 2026, 9 04 02 AM.jpg", "Photo Feb 12 2026, 9 04 11 AM.jpg", "Photo Feb 12 2026, 9 04 43 AM.jpg", "Photo Feb 12 2026, 9 04 53 AM.jpg", "Photo Feb 12 2026, 9 05 12 AM.jpg", "Photo Feb 12 2026, 9 05 36 AM.jpg", "Photo Feb 12 2026, 9 05 36 AM.png", "Photo Feb 12 2026, 9 06 12 AM.jpg", "Photo Feb 12 2026, 9 06 29 AM.jpg", "Photo Feb 12 2026, 9 06 58 AM.jpg", "Photo Feb 12 2026, 9 07 05 AM.jpg", "Photo Feb 12 2026, 9 07 15 AM.jpg", "Photo Feb 12 2026, 9 07 36 AM.jpg", "Photo Feb 12 2026, 9 07 48 AM.jpg", "Photo Feb 12 2026, 9 08 12 AM.jpg", "Photo Feb 13 2026, 6 26 51 PM.jpg", "Photo Feb 13 2026, 6 26 54 PM.jpg", "Photo Feb 13 2026, 6 26 59 PM.jpg", "Photo Feb 13 2026, 6 27 03 PM.jpg", "Photo Feb 13 2026, 6 27 07 PM.jpg", "Photo Feb 13 2026, 6 27 11 PM.jpg", "Photo Feb 13 2026, 6 27 14 PM.jpg", "Photo Feb 13 2026, 6 27 19 PM.jpg", "Photo Feb 13 2026, 6 27 42 PM.jpg", "Photo Feb 13 2026, 6 27 47 PM.jpg", "Photo Feb 13 2026, 6 27 51 PM.jpg", "Photo Feb 13 2026, 6 28 21 PM.jpg", "Photo Feb 13 2026, 6 28 29 PM.jpg", "Photo Feb 13 2026, 6 28 31 PM.jpg", "Photo Feb 13 2026, 6 28 37 PM.jpg", "Photo Feb 13 2026, 6 28 41 PM.jpg", "Photo Feb 13 2026, 6 28 45 PM.jpg", "Photo Feb 13 2026, 6 28 49 PM.jpg", "Photo Feb 17 2026, 8 22 53 PM.jpg", "Photo Feb 17 2026, 8 23 57 PM.jpg", "Photo Feb 17 2026, 8 24 13 PM.jpg", "Photo Feb 17 2026, 8 24 23 PM.jpg", "Photo Feb 17 2026, 8 24 34 PM.jpg", "Photo Feb 17 2026, 8 24 44 PM.jpg", "Photo Feb 17 2026, 8 24 52 PM.jpg", "Photo Feb 17 2026, 8 25 01 PM.jpg", "Photo Feb 17 2026, 8 25 21 PM.jpg", "Photo Feb 17 2026, 8 25 40 PM.jpg", "Photo Feb 17 2026, 8 25 48 PM.jpg", "Photo Feb 17 2026, 8 25 58 PM.jpg", "Photo Feb 18 2026, 8 59 36 PM.jpg", "Photo Feb 18 2026, 8 59 41 PM.jpg", "Photo Feb 18 2026, 9 00 05 PM.jpg", "Photo Feb 18 2026, 9 00 11 PM.jpg", "Photo Feb 18 2026, 9 00 13 PM.jpg", "Photo Feb 18 2026, 9 00 16 PM.jpg", "Photo Feb 18 2026, 9 00 19 PM.jpg", "Photo Feb 18 2026, 9 00 24 PM.jpg", "Photo Feb 18 2026, 9 00 29 PM.jpg", "Photo Feb 18 2026, 9 00 34 PM.jpg", "Photo Feb 18 2026, 9 00 53 PM.jpg", "Photo Feb 19 2026, 6 14 42 PM.png", "Photo Feb 19 2026, 6 16 08 PM.jpg", "Photo Feb 19 2026, 6 16 22 PM.jpg", "Photo Feb 19 2026, 6 16 37 PM.jpg", "Photo Feb 19 2026, 6 16 49 PM.jpg", "Photo Feb 19 2026, 6 17 10 PM.jpg", "Photo Feb 19 2026, 6 17 35 PM.jpg", "Photo Feb 20 2026, 7 54 20 PM.jpg", "Photo Feb 20 2026, 7 54 29 PM.jpg", "Photo Feb 20 2026, 7 54 31 PM.jpg", "Photo Feb 20 2026, 7 54 36 PM.jpg", "Photo Feb 20 2026, 7 54 39 PM.jpg", "Photo Feb 20 2026, 7 54 46 PM.jpg", "Photo Feb 20 2026, 7 55 26 PM.jpg", "Photo Feb 20 2026, 7 55 30 PM.jpg", "Photo Feb 20 2026, 7 55 37 PM.jpg", "Photo Feb 20 2026, 7 55 41 PM.jpg", "Photo Feb 20 2026, 7 55 45 PM.jpg", "Photo Feb 20 2026, 7 55 48 PM.jpg", "Photo Feb 20 2026, 7 55 52 PM.jpg", "Photo Feb 20 2026, 7 55 57 PM.jpg", "Photo Feb 20 2026, 7 56 14 PM.jpg", "Photo Feb 20 2026, 7 56 27 PM.jpg", "Photo Feb 20 2026, 7 57 37 PM.jpg", "Photo Feb 20 2026, 7 57 42 PM.jpg", "Photo Feb 20 2026, 7 57 48 PM.jpg", "Photo Feb 20 2026, 7 57 51 PM.jpg", "Photo Feb 20 2026, 7 57 56 PM.jpg", "Photo Feb 20 2026, 7 58 00 PM.jpg", "Photo Feb 20 2026, 7 58 04 PM.jpg", "Photo Feb 20 2026, 7 58 08 PM.jpg", "Photo Feb 20 2026, 7 58 14 PM.jpg", "Photo Feb 23 2026, 10 04 04 PM.jpg", "Photo Feb 23 2026, 10 04 04 PM.png", "Photo Feb 23 2026, 10 04 25 PM.jpg", "Photo Feb 23 2026, 10 04 40 PM.jpg", "Photo Feb 23 2026, 10 05 02 PM.jpg", "Photo Feb 23 2026, 10 05 16 PM.jpg", "Photo Feb 23 2026, 10 05 42 PM.jpg", "Photo Feb 23 2026, 10 05 52 PM.jpg", "Photo Feb 23 2026, 10 06 06 PM.jpg", "Photo Feb 23 2026, 10 06 19 PM.jpg", "Photo Feb 23 2026, 10 06 23 PM.png", "Photo Feb 23 2026, 10 06 57 PM.jpg", "Photo Feb 23 2026, 10 07 11 PM.jpg", "Photo Feb 23 2026, 10 07 25 PM.jpg", "Photo Feb 23 2026, 10 08 02 PM.jpg", "Photo Feb 23 2026, 10 08 17 PM.jpg", "Photo Feb 23 2026, 10 08 26 PM.jpg", "Photo Feb 23 2026, 10 08 33 PM.jpg", "Photo Feb 24 2026, 9 38 43 PM.jpg", "Photo Feb 24 2026, 9 38 47 PM.jpg", "Photo Feb 24 2026, 9 38 50 PM.jpg", "Photo Feb 24 2026, 9 38 54 PM.jpg", "Photo Feb 24 2026, 9 38 58 PM.jpg", "Photo Feb 24 2026, 9 39 03 PM.jpg", "Photo Feb 24 2026, 9 39 07 PM.jpg", "Photo Feb 24 2026, 9 39 14 PM.jpg", "Photo Feb 24 2026, 9 39 44 PM.jpg", "Photo Feb 24 2026, 9 39 48 PM.jpg", "Photo Feb 24 2026, 9 39 51 PM.jpg", "Photo Feb 24 2026, 9 39 55 PM.jpg", "Photo Feb 24 2026, 9 39 59 PM.jpg", "Photo Feb 24 2026, 9 40 04 PM.jpg", "Photo Feb 24 2026, 9 40 09 PM.jpg", "Photo Feb 24 2026, 9 40 24 PM.jpg", "Photo Feb 24 2026, 9 40 43 PM.jpg", "Photo Feb 24 2026, 9 40 59 PM.jpg", "Photo Feb 24 2026, 9 41 03 PM.jpg", "Photo Feb 24 2026, 9 41 08 PM.jpg", "Photo Feb 25 2026, 8 30 13 PM.jpg", "Photo Feb 25 2026, 8 30 18 PM.jpg", "Photo Feb 25 2026, 8 30 21 PM.jpg", "Photo Feb 25 2026, 8 30 25 PM.jpg", "Photo Feb 25 2026, 8 30 30 PM.jpg", "Photo Feb 25 2026, 8 30 36 PM.jpg", "Photo Feb 25 2026, 8 31 08 PM.jpg", "Photo Feb 25 2026, 8 31 12 PM.jpg", "Photo Feb 25 2026, 8 31 17 PM.jpg", "Photo Feb 25 2026, 8 31 23 PM.jpg", "Photo Feb 25 2026, 8 31 33 PM.jpg", "Photo Feb 26 2026, 9 49 18 PM.jpg", "Photo Feb 26 2026, 9 49 30 PM.jpg", "Photo Feb 26 2026, 9 49 37 PM.jpg", "Photo Feb 26 2026, 9 49 49 PM.jpg", "Photo Feb 26 2026, 9 50 02 PM.jpg", "Photo Feb 26 2026, 9 50 15 PM.jpg", "Photo Feb 26 2026, 9 50 23 PM.jpg", "Photo Feb 26 2026, 9 50 33 PM.jpg", "Photo Feb 26 2026, 9 50 40 PM.jpg", "Photo Feb 26 2026, 9 50 51 PM.jpg", "Photo Feb 26 2026, 9 51 17 PM.jpg", "Photo Feb 26 2026, 9 51 27 PM.jpg", "Photo Feb 26 2026, 9 51 39 PM.jpg", "Photo Feb 26 2026, 9 51 49 PM.jpg", "Photo Feb 26 2026, 9 52 01 PM.jpg", "Photo Feb 26 2026, 9 52 13 PM.jpg", "Photo Feb 26 2026, 9 52 28 PM.jpg", "Photo Feb 26 2026, 9 52 45 PM.jpg", "Photo Feb 26 2026, 9 53 20 PM.jpg", "Photo Feb 26 2026, 9 53 59 PM.jpg", "Photo Feb 26 2026, 9 54 20 PM.jpg", "Photo Feb 26 2026, 9 54 39 PM.jpg", "Photo Feb 26 2026, 9 54 54 PM.jpg", "Photo Feb 26 2026, 9 55 06 PM.jpg", "Photo Feb 26 2026, 9 55 17 PM.jpg", "Photo Feb 26 2026, 9 55 34 PM.jpg", "Photo Feb 26 2026, 9 55 44 PM.jpg", "Photo Feb 26 2026, 9 55 51 PM.jpg", "Photo Feb 26 2026, 9 56 06 PM.jpg", "Photo Feb 26 2026, 9 56 20 PM.jpg", "Photo Feb 26 2026, 9 56 30 PM.jpg", "Photo Feb 27 2026, 10 24 47 PM.jpg", "Photo Feb 27 2026, 10 24 50 PM.jpg", "Photo Feb 27 2026, 10 24 55 PM.jpg", "Photo Feb 27 2026, 10 24 58 PM.jpg", "Photo Feb 27 2026, 10 25 02 PM.jpg", "Photo Feb 27 2026, 10 25 05 PM.jpg", "Photo Feb 27 2026, 10 25 09 PM.jpg", "Photo Feb 27 2026, 10 25 14 PM.jpg", "Photo Feb 27 2026, 10 25 17 PM.jpg", "Photo Feb 27 2026, 10 25 22 PM.jpg", "Photo Feb 27 2026, 10 25 25 PM.jpg", "Photo Feb 27 2026, 10 25 31 PM.jpg", "Photo Mar 02 2026, 11 08 26 PM.jpg", "Photo Mar 02 2026, 11 08 33 PM.jpg", "Photo Mar 02 2026, 11 08 37 PM.jpg", "Photo Mar 02 2026, 11 08 41 PM.jpg", "Photo Mar 02 2026, 11 08 46 PM.jpg", "Photo Mar 02 2026, 11 08 50 PM.jpg", "Photo Mar 02 2026, 11 08 58 PM.jpg", "Photo Mar 02 2026, 11 09 21 PM.jpg", "Photo Mar 02 2026, 11 09 48 PM.jpg", "Photo Mar 02 2026, 11 09 52 PM.jpg", "Photo Mar 02 2026, 11 10 00 PM.jpg", "Photo Mar 02 2026, 11 10 51 PM.jpg", "Photo Mar 02 2026, 11 10 55 PM.jpg", "Photo Mar 02 2026, 11 11 00 PM.jpg", "Photo Mar 02 2026, 11 11 03 PM.jpg", "Photo Mar 02 2026, 11 11 07 PM.jpg", "Photo Mar 02 2026, 11 11 10 PM.jpg", "Photo Mar 02 2026, 11 11 16 PM.jpg", "Photo Mar 02 2026, 11 11 21 PM.jpg", "Photo Mar 02 2026, 11 11 26 PM.jpg", "Photo Mar 02 2026, 11 11 30 PM.jpg", "Photo Mar 02 2026, 11 11 35 PM.jpg", "Photo Mar 02 2026, 11 11 39 PM.jpg", "Photo Mar 02 2026, 11 11 47 PM.jpg", "Photo Mar 02 2026, 11 11 54 PM.jpg", "Photo Mar 03 2026, 11 46 01 PM.jpg", "Photo Mar 03 2026, 11 46 05 PM.jpg", "Photo Mar 03 2026, 11 46 09 PM.jpg", "Photo Mar 03 2026, 11 46 13 PM.jpg", "Photo Mar 03 2026, 11 46 17 PM.jpg", "Photo Mar 03 2026, 11 46 21 PM.jpg", "Photo Mar 03 2026, 11 46 24 PM.jpg", "Photo Mar 03 2026, 11 46 29 PM.jpg", "Photo Mar 03 2026, 11 47 02 PM.jpg", "Photo Mar 03 2026, 11 47 06 PM.jpg", "Photo Mar 03 2026, 11 47 09 PM.jpg", "Photo Mar 03 2026, 11 47 12 PM.jpg", "Photo Mar 03 2026, 11 47 15 PM.jpg", "Photo Mar 03 2026, 11 47 19 PM.jpg", "Photo Mar 03 2026, 11 47 22 PM.jpg", "Photo Mar 03 2026, 11 47 27 PM.jpg", "Photo Mar 03 2026, 11 47 31 PM.jpg", "Photo Mar 03 2026, 11 47 36 PM.jpg", "Photo Mar 03 2026, 11 48 03 PM.jpg", "Photo Mar 03 2026, 11 48 08 PM.jpg", "Photo Mar 04 2026, 9 28 11 PM.jpg", "Photo Mar 04 2026, 9 28 17 PM.jpg", "Photo Mar 04 2026, 9 28 25 PM.jpg", "Photo Mar 04 2026, 9 36 53 PM.jpg", "Photo Mar 04 2026, 9 36 57 PM.jpg", "Photo Mar 04 2026, 9 37 07 PM.jpg", "Photo Mar 04 2026, 9 37 12 PM.jpg", "Photo Mar 04 2026, 9 37 16 PM.jpg", "Photo Mar 04 2026, 9 37 19 PM.jpg", "Photo Mar 04 2026, 9 37 25 PM.jpg", "Photo Mar 04 2026, 9 37 32 PM.jpg", "Photo Mar 04 2026, 9 37 34 PM.jpg", "Photo Mar 04 2026, 9 37 38 PM.jpg", "Photo Mar 04 2026, 9 37 43 PM.jpg", "Photo Mar 05 2026, 11 41 53 PM.jpg", "Photo Mar 05 2026, 11 42 25 PM.jpg", "Photo Mar 05 2026, 11 42 28 PM.jpg", "Photo Mar 05 2026, 11 42 32 PM.jpg", "Photo Mar 05 2026, 11 42 35 PM.jpg", "Photo Mar 05 2026, 11 42 40 PM.jpg", "Photo Mar 05 2026, 11 42 45 PM.jpg", "Photo Mar 05 2026, 11 42 54 PM.jpg", "Photo Mar 05 2026, 11 43 03 PM.jpg", "Photo Mar 05 2026, 11 44 10 PM.jpg", "Photo Mar 05 2026, 11 44 16 PM.jpg", "Photo Mar 05 2026, 11 44 20 PM.jpg", "Photo Mar 05 2026, 11 44 24 PM.jpg", "Photo Mar 05 2026, 11 44 27 PM.jpg", "Photo Mar 05 2026, 11 44 31 PM.jpg", "Photo Mar 05 2026, 11 44 34 PM.jpg", "Photo Mar 05 2026, 11 44 38 PM.jpg", "Photo Mar 05 2026, 11 44 45 PM.jpg", "Photo Mar 05 2026, 11 44 49 PM.jpg", "Photo Mar 05 2026, 11 44 53 PM.jpg", "Photo Mar 05 2026, 11 44 57 PM.jpg", "Photo Mar 05 2026, 11 45 01 PM.jpg", "Photo Mar 05 2026, 11 45 05 PM.jpg", "Photo Mar 05 2026, 11 45 10 PM.jpg", "Photo Mar 05 2026, 11 45 13 PM.jpg", "Photo Mar 05 2026, 11 45 18 PM.jpg", "Photo Mar 06 2026, 5 10 54 AM.png"];
-    const BATCH_SIZE = 28;
-    let currentIndex = 0;
-    let loadedImages = [];
-    const grid = document.getElementById('masonry-grid');
-    const loadMoreBtn = document.getElementById('load-more-btn');
-    const countEl = document.getElementById('images-count');
+    var ALL_IMAGES = ["Photo%20Feb%2009%202026%2C%2011%2026%2021%20PM.jpg", "Photo%20Feb%2009%202026%2C%2011%2027%2007%20PM.jpg", "Photo%20Feb%2009%202026%2C%2011%2027%2011%20PM.jpg", "Photo%20Feb%2009%202026%2C%2011%2027%2015%20PM.jpg", "Photo%20Feb%2009%202026%2C%2011%2027%2021%20PM.jpg", "Photo%20Feb%2009%202026%2C%2011%2027%2025%20PM.jpg", "Photo%20Feb%2009%202026%2C%2011%2027%2032%20PM.jpg", "Photo%20Feb%2009%202026%2C%2011%2027%2043%20PM.jpg", "Photo%20Feb%2009%202026%2C%2011%2028%2005%20PM.jpg", "Photo%20Feb%2010%202026%2C%201%2050%2046%20AM.jpg", "Photo%20Feb%2010%202026%2C%201%2050%2054%20AM.jpg", "Photo%20Feb%2010%202026%2C%201%2051%2000%20AM.jpg", "Photo%20Feb%2010%202026%2C%201%2051%2010%20AM.jpg", "Photo%20Feb%2010%202026%2C%201%2051%2014%20AM.jpg", "Photo%20Feb%2010%202026%2C%201%2051%2017%20AM.jpg", "Photo%20Feb%2010%202026%2C%201%2051%2022%20AM.jpg", "Photo%20Feb%2010%202026%2C%201%2051%2030%20AM.jpg", "Photo%20Feb%2010%202026%2C%203%2044%2030%20AM.jpg", "Photo%20Feb%2010%202026%2C%203%2044%2040%20AM.jpg", "Photo%20Feb%2010%202026%2C%203%2044%2051%20AM.jpg", "Photo%20Feb%2010%202026%2C%203%2045%2000%20AM.jpg", "Photo%20Feb%2010%202026%2C%203%2045%2010%20AM.jpg", "Photo%20Feb%2010%202026%2C%203%2045%2021%20AM.jpg", "Photo%20Feb%2010%202026%2C%203%2045%2030%20AM.jpg", "Photo%20Feb%2010%202026%2C%203%2045%2041%20AM.jpg", "Photo%20Feb%2010%202026%2C%203%2045%2049%20AM.jpg", "Photo%20Feb%2010%202026%2C%203%2045%2059%20AM.jpg", "Photo%20Feb%2010%202026%2C%203%2046%2012%20AM.jpg", "Photo%20Feb%2010%202026%2C%203%2046%2033%20AM.jpg", "Photo%20Feb%2010%202026%2C%203%2046%2051%20AM.jpg", "Photo%20Feb%2010%202026%2C%203%2046%2058%20AM.jpg", "Photo%20Feb%2010%202026%2C%203%2047%2029%20AM.jpg", "Photo%20Feb%2010%202026%2C%203%2047%2046%20AM.jpg", "Photo%20Feb%2011%202026%2C%2010%2012%2002%20PM.jpg", "Photo%20Feb%2011%202026%2C%2010%2012%2006%20PM.jpg", "Photo%20Feb%2011%202026%2C%2010%2012%2009%20PM.jpg", "Photo%20Feb%2011%202026%2C%2010%2012%2013%20PM.jpg", "Photo%20Feb%2011%202026%2C%2010%2012%2017%20PM.jpg", "Photo%20Feb%2011%202026%2C%2010%2012%2020%20PM.jpg", "Photo%20Feb%2011%202026%2C%2010%2012%2025%20PM.jpg", "Photo%20Feb%2011%202026%2C%2010%2012%2028%20PM.jpg", "Photo%20Feb%2011%202026%2C%2010%2012%2031%20PM.jpg", "Photo%20Feb%2011%202026%2C%2010%2012%2039%20PM.jpg", "Photo%20Feb%2011%202026%2C%2010%2012%2043%20PM.jpg", "Photo%20Feb%2011%202026%2C%2010%2012%2047%20PM.jpg", "Photo%20Feb%2011%202026%2C%2010%2012%2052%20PM.jpg", "Photo%20Feb%2011%202026%2C%2010%2012%2055%20PM.jpg", "Photo%20Feb%2011%202026%2C%2010%2012%2059%20PM.jpg", "Photo%20Feb%2011%202026%2C%2010%2013%2004%20PM.jpg", "Photo%20Feb%2011%202026%2C%2010%2013%2041%20PM.jpg", "Photo%20Feb%2011%202026%2C%2010%2013%2045%20PM.jpg", "Photo%20Feb%2011%202026%2C%2010%2013%2048%20PM.jpg", "Photo%20Feb%2011%202026%2C%2010%2013%2052%20PM.jpg", "Photo%20Feb%2011%202026%2C%2010%2013%2056%20PM.jpg", "Photo%20Feb%2011%202026%2C%2010%2014%2000%20PM.jpg", "Photo%20Feb%2011%202026%2C%2010%2014%2004%20PM.jpg", "Photo%20Feb%2011%202026%2C%2010%2014%2007%20PM.jpg", "Photo%20Feb%2011%202026%2C%2010%2014%2010%20PM.jpg", "Photo%20Feb%2011%202026%2C%2010%2014%2015%20PM.jpg", "Photo%20Feb%2011%202026%2C%2010%2014%2020%20PM.jpg", "Photo%20Feb%2011%202026%2C%2010%2014%2043%20PM.jpg", "Photo%20Feb%2011%202026%2C%2010%2014%2047%20PM.jpg", "Photo%20Feb%2011%202026%2C%2010%2014%2050%20PM.jpg", "Photo%20Feb%2011%202026%2C%2010%2014%2056%20PM.jpg", "Photo%20Feb%2012%202026%2C%208%2055%2051%20AM.jpg", "Photo%20Feb%2012%202026%2C%208%2056%2006%20AM.jpg", "Photo%20Feb%2012%202026%2C%208%2056%2015%20AM.jpg", "Photo%20Feb%2012%202026%2C%208%2056%2031%20AM.png", "Photo%20Feb%2012%202026%2C%208%2056%2041%20AM.jpg", "Photo%20Feb%2012%202026%2C%208%2056%2054%20AM.jpg", "Photo%20Feb%2012%202026%2C%208%2057%2002%20AM.jpg", "Photo%20Feb%2012%202026%2C%208%2057%2015%20AM.jpg", "Photo%20Feb%2012%202026%2C%208%2057%2027%20AM.jpg", "Photo%20Feb%2012%202026%2C%208%2057%2036%20AM.jpg", "Photo%20Feb%2012%202026%2C%208%2057%2045%20AM.jpg", "Photo%20Feb%2012%202026%2C%208%2058%2004%20AM.jpg", "Photo%20Feb%2012%202026%2C%208%2058%2015%20AM.jpg", "Photo%20Feb%2012%202026%2C%208%2058%2023%20AM.jpg", "Photo%20Feb%2012%202026%2C%208%2058%2033%20AM.jpg", "Photo%20Feb%2012%202026%2C%208%2058%2047%20AM.jpg", "Photo%20Feb%2012%202026%2C%208%2059%2006%20AM.jpg", "Photo%20Feb%2012%202026%2C%208%2059%2018%20AM.jpg", "Photo%20Feb%2012%202026%2C%208%2059%2026%20AM.jpg", "Photo%20Feb%2012%202026%2C%208%2059%2037%20AM.jpg", "Photo%20Feb%2012%202026%2C%208%2059%2045%20AM.jpg", "Photo%20Feb%2012%202026%2C%208%2059%2055%20AM.jpg", "Photo%20Feb%2012%202026%2C%209%2000%2008%20AM.jpg", "Photo%20Feb%2012%202026%2C%209%2000%2017%20AM.jpg", "Photo%20Feb%2012%202026%2C%209%2000%2025%20AM.jpg", "Photo%20Feb%2012%202026%2C%209%2000%2035%20AM.jpg", "Photo%20Feb%2012%202026%2C%209%2000%2043%20AM.jpg", "Photo%20Feb%2012%202026%2C%209%2000%2053%20AM.jpg", "Photo%20Feb%2012%202026%2C%209%2001%2001%20AM.jpg", "Photo%20Feb%2012%202026%2C%209%2001%2030%20AM.jpg", "Photo%20Feb%2012%202026%2C%209%2001%2041%20AM.jpg", "Photo%20Feb%2012%202026%2C%209%2001%2051%20AM.jpg", "Photo%20Feb%2012%202026%2C%209%2002%2001%20AM.jpg", "Photo%20Feb%2012%202026%2C%209%2002%2009%20AM.jpg", "Photo%20Feb%2012%202026%2C%209%2002%2019%20AM.jpg", "Photo%20Feb%2012%202026%2C%209%2002%2028%20AM.jpg", "Photo%20Feb%2012%202026%2C%209%2002%2036%20AM.jpg", "Photo%20Feb%2012%202026%2C%209%2003%2000%20AM.jpg", "Photo%20Feb%2012%202026%2C%209%2003%2008%20AM.jpg", "Photo%20Feb%2012%202026%2C%209%2003%2028%20AM.jpg", "Photo%20Feb%2012%202026%2C%209%2003%2037%20AM.jpg", "Photo%20Feb%2012%202026%2C%209%2003%2054%20AM.jpg", "Photo%20Feb%2012%202026%2C%209%2004%2002%20AM.jpg", "Photo%20Feb%2012%202026%2C%209%2004%2011%20AM.jpg", "Photo%20Feb%2012%202026%2C%209%2004%2043%20AM.jpg", "Photo%20Feb%2012%202026%2C%209%2004%2053%20AM.jpg", "Photo%20Feb%2012%202026%2C%209%2005%2012%20AM.jpg", "Photo%20Feb%2012%202026%2C%209%2005%2036%20AM.jpg", "Photo%20Feb%2012%202026%2C%209%2005%2036%20AM.png", "Photo%20Feb%2012%202026%2C%209%2006%2012%20AM.jpg", "Photo%20Feb%2012%202026%2C%209%2006%2029%20AM.jpg", "Photo%20Feb%2012%202026%2C%209%2006%2058%20AM.jpg", "Photo%20Feb%2012%202026%2C%209%2007%2005%20AM.jpg", "Photo%20Feb%2012%202026%2C%209%2007%2015%20AM.jpg", "Photo%20Feb%2012%202026%2C%209%2007%2036%20AM.jpg", "Photo%20Feb%2012%202026%2C%209%2007%2048%20AM.jpg", "Photo%20Feb%2012%202026%2C%209%2008%2012%20AM.jpg", "Photo%20Feb%2013%202026%2C%206%2026%2051%20PM.jpg", "Photo%20Feb%2013%202026%2C%206%2026%2054%20PM.jpg", "Photo%20Feb%2013%202026%2C%206%2026%2059%20PM.jpg", "Photo%20Feb%2013%202026%2C%206%2027%2003%20PM.jpg", "Photo%20Feb%2013%202026%2C%206%2027%2007%20PM.jpg", "Photo%20Feb%2013%202026%2C%206%2027%2011%20PM.jpg", "Photo%20Feb%2013%202026%2C%206%2027%2014%20PM.jpg", "Photo%20Feb%2013%202026%2C%206%2027%2019%20PM.jpg", "Photo%20Feb%2013%202026%2C%206%2027%2042%20PM.jpg", "Photo%20Feb%2013%202026%2C%206%2027%2047%20PM.jpg", "Photo%20Feb%2013%202026%2C%206%2027%2051%20PM.jpg", "Photo%20Feb%2013%202026%2C%206%2028%2021%20PM.jpg", "Photo%20Feb%2013%202026%2C%206%2028%2029%20PM.jpg", "Photo%20Feb%2013%202026%2C%206%2028%2031%20PM.jpg", "Photo%20Feb%2013%202026%2C%206%2028%2037%20PM.jpg", "Photo%20Feb%2013%202026%2C%206%2028%2041%20PM.jpg", "Photo%20Feb%2013%202026%2C%206%2028%2045%20PM.jpg", "Photo%20Feb%2013%202026%2C%206%2028%2049%20PM.jpg", "Photo%20Feb%2017%202026%2C%208%2022%2053%20PM.jpg", "Photo%20Feb%2017%202026%2C%208%2023%2057%20PM.jpg", "Photo%20Feb%2017%202026%2C%208%2024%2013%20PM.jpg", "Photo%20Feb%2017%202026%2C%208%2024%2023%20PM.jpg", "Photo%20Feb%2017%202026%2C%208%2024%2034%20PM.jpg", "Photo%20Feb%2017%202026%2C%208%2024%2044%20PM.jpg", "Photo%20Feb%2017%202026%2C%208%2024%2052%20PM.jpg", "Photo%20Feb%2017%202026%2C%208%2025%2001%20PM.jpg", "Photo%20Feb%2017%202026%2C%208%2025%2021%20PM.jpg", "Photo%20Feb%2017%202026%2C%208%2025%2040%20PM.jpg", "Photo%20Feb%2017%202026%2C%208%2025%2048%20PM.jpg", "Photo%20Feb%2017%202026%2C%208%2025%2058%20PM.jpg", "Photo%20Feb%2018%202026%2C%208%2059%2036%20PM.jpg", "Photo%20Feb%2018%202026%2C%208%2059%2041%20PM.jpg", "Photo%20Feb%2018%202026%2C%209%2000%2005%20PM.jpg", "Photo%20Feb%2018%202026%2C%209%2000%2011%20PM.jpg", "Photo%20Feb%2018%202026%2C%209%2000%2013%20PM.jpg", "Photo%20Feb%2018%202026%2C%209%2000%2016%20PM.jpg", "Photo%20Feb%2018%202026%2C%209%2000%2019%20PM.jpg", "Photo%20Feb%2018%202026%2C%209%2000%2024%20PM.jpg", "Photo%20Feb%2018%202026%2C%209%2000%2029%20PM.jpg", "Photo%20Feb%2018%202026%2C%209%2000%2034%20PM.jpg", "Photo%20Feb%2018%202026%2C%209%2000%2053%20PM.jpg", "Photo%20Feb%2019%202026%2C%206%2014%2042%20PM.png", "Photo%20Feb%2019%202026%2C%206%2016%2008%20PM.jpg", "Photo%20Feb%2019%202026%2C%206%2016%2022%20PM.jpg", "Photo%20Feb%2019%202026%2C%206%2016%2037%20PM.jpg", "Photo%20Feb%2019%202026%2C%206%2016%2049%20PM.jpg", "Photo%20Feb%2019%202026%2C%206%2017%2010%20PM.jpg", "Photo%20Feb%2019%202026%2C%206%2017%2035%20PM.jpg", "Photo%20Feb%2020%202026%2C%207%2054%2020%20PM.jpg", "Photo%20Feb%2020%202026%2C%207%2054%2029%20PM.jpg", "Photo%20Feb%2020%202026%2C%207%2054%2031%20PM.jpg", "Photo%20Feb%2020%202026%2C%207%2054%2036%20PM.jpg", "Photo%20Feb%2020%202026%2C%207%2054%2039%20PM.jpg", "Photo%20Feb%2020%202026%2C%207%2054%2046%20PM.jpg", "Photo%20Feb%2020%202026%2C%207%2055%2026%20PM.jpg", "Photo%20Feb%2020%202026%2C%207%2055%2030%20PM.jpg", "Photo%20Feb%2020%202026%2C%207%2055%2037%20PM.jpg", "Photo%20Feb%2020%202026%2C%207%2055%2041%20PM.jpg", "Photo%20Feb%2020%202026%2C%207%2055%2045%20PM.jpg", "Photo%20Feb%2020%202026%2C%207%2055%2048%20PM.jpg", "Photo%20Feb%2020%202026%2C%207%2055%2052%20PM.jpg", "Photo%20Feb%2020%202026%2C%207%2055%2057%20PM.jpg", "Photo%20Feb%2020%202026%2C%207%2056%2014%20PM.jpg", "Photo%20Feb%2020%202026%2C%207%2056%2027%20PM.jpg", "Photo%20Feb%2020%202026%2C%207%2057%2037%20PM.jpg", "Photo%20Feb%2020%202026%2C%207%2057%2042%20PM.jpg", "Photo%20Feb%2020%202026%2C%207%2057%2048%20PM.jpg", "Photo%20Feb%2020%202026%2C%207%2057%2051%20PM.jpg", "Photo%20Feb%2020%202026%2C%207%2057%2056%20PM.jpg", "Photo%20Feb%2020%202026%2C%207%2058%2000%20PM.jpg", "Photo%20Feb%2020%202026%2C%207%2058%2004%20PM.jpg", "Photo%20Feb%2020%202026%2C%207%2058%2008%20PM.jpg", "Photo%20Feb%2020%202026%2C%207%2058%2014%20PM.jpg", "Photo%20Feb%2023%202026%2C%2010%2004%2004%20PM.jpg", "Photo%20Feb%2023%202026%2C%2010%2004%2004%20PM.png", "Photo%20Feb%2023%202026%2C%2010%2004%2025%20PM.jpg", "Photo%20Feb%2023%202026%2C%2010%2004%2040%20PM.jpg", "Photo%20Feb%2023%202026%2C%2010%2005%2002%20PM.jpg", "Photo%20Feb%2023%202026%2C%2010%2005%2016%20PM.jpg", "Photo%20Feb%2023%202026%2C%2010%2005%2042%20PM.jpg", "Photo%20Feb%2023%202026%2C%2010%2005%2052%20PM.jpg", "Photo%20Feb%2023%202026%2C%2010%2006%2006%20PM.jpg", "Photo%20Feb%2023%202026%2C%2010%2006%2019%20PM.jpg", "Photo%20Feb%2023%202026%2C%2010%2006%2023%20PM.png", "Photo%20Feb%2023%202026%2C%2010%2006%2057%20PM.jpg", "Photo%20Feb%2023%202026%2C%2010%2007%2011%20PM.jpg", "Photo%20Feb%2023%202026%2C%2010%2007%2025%20PM.jpg", "Photo%20Feb%2023%202026%2C%2010%2008%2002%20PM.jpg", "Photo%20Feb%2023%202026%2C%2010%2008%2017%20PM.jpg", "Photo%20Feb%2023%202026%2C%2010%2008%2026%20PM.jpg", "Photo%20Feb%2023%202026%2C%2010%2008%2033%20PM.jpg", "Photo%20Feb%2024%202026%2C%209%2038%2043%20PM.jpg", "Photo%20Feb%2024%202026%2C%209%2038%2047%20PM.jpg", "Photo%20Feb%2024%202026%2C%209%2038%2050%20PM.jpg", "Photo%20Feb%2024%202026%2C%209%2038%2054%20PM.jpg", "Photo%20Feb%2024%202026%2C%209%2038%2058%20PM.jpg", "Photo%20Feb%2024%202026%2C%209%2039%2003%20PM.jpg", "Photo%20Feb%2024%202026%2C%209%2039%2007%20PM.jpg", "Photo%20Feb%2024%202026%2C%209%2039%2014%20PM.jpg", "Photo%20Feb%2024%202026%2C%209%2039%2044%20PM.jpg", "Photo%20Feb%2024%202026%2C%209%2039%2048%20PM.jpg", "Photo%20Feb%2024%202026%2C%209%2039%2051%20PM.jpg", "Photo%20Feb%2024%202026%2C%209%2039%2055%20PM.jpg", "Photo%20Feb%2024%202026%2C%209%2039%2059%20PM.jpg", "Photo%20Feb%2024%202026%2C%209%2040%2004%20PM.jpg", "Photo%20Feb%2024%202026%2C%209%2040%2009%20PM.jpg", "Photo%20Feb%2024%202026%2C%209%2040%2024%20PM.jpg", "Photo%20Feb%2024%202026%2C%209%2040%2043%20PM.jpg", "Photo%20Feb%2024%202026%2C%209%2040%2059%20PM.jpg", "Photo%20Feb%2024%202026%2C%209%2041%2003%20PM.jpg", "Photo%20Feb%2024%202026%2C%209%2041%2008%20PM.jpg", "Photo%20Feb%2025%202026%2C%208%2030%2013%20PM.jpg", "Photo%20Feb%2025%202026%2C%208%2030%2018%20PM.jpg", "Photo%20Feb%2025%202026%2C%208%2030%2021%20PM.jpg", "Photo%20Feb%2025%202026%2C%208%2030%2025%20PM.jpg", "Photo%20Feb%2025%202026%2C%208%2030%2030%20PM.jpg", "Photo%20Feb%2025%202026%2C%208%2030%2036%20PM.jpg", "Photo%20Feb%2025%202026%2C%208%2031%2008%20PM.jpg", "Photo%20Feb%2025%202026%2C%208%2031%2012%20PM.jpg", "Photo%20Feb%2025%202026%2C%208%2031%2017%20PM.jpg", "Photo%20Feb%2025%202026%2C%208%2031%2023%20PM.jpg", "Photo%20Feb%2025%202026%2C%208%2031%2033%20PM.jpg", "Photo%20Feb%2026%202026%2C%209%2049%2018%20PM.jpg", "Photo%20Feb%2026%202026%2C%209%2049%2030%20PM.jpg", "Photo%20Feb%2026%202026%2C%209%2049%2037%20PM.jpg", "Photo%20Feb%2026%202026%2C%209%2049%2049%20PM.jpg", "Photo%20Feb%2026%202026%2C%209%2050%2002%20PM.jpg", "Photo%20Feb%2026%202026%2C%209%2050%2015%20PM.jpg", "Photo%20Feb%2026%202026%2C%209%2050%2023%20PM.jpg", "Photo%20Feb%2026%202026%2C%209%2050%2033%20PM.jpg", "Photo%20Feb%2026%202026%2C%209%2050%2040%20PM.jpg", "Photo%20Feb%2026%202026%2C%209%2050%2051%20PM.jpg", "Photo%20Feb%2026%202026%2C%209%2051%2017%20PM.jpg", "Photo%20Feb%2026%202026%2C%209%2051%2027%20PM.jpg", "Photo%20Feb%2026%202026%2C%209%2051%2039%20PM.jpg", "Photo%20Feb%2026%202026%2C%209%2051%2049%20PM.jpg", "Photo%20Feb%2026%202026%2C%209%2052%2001%20PM.jpg", "Photo%20Feb%2026%202026%2C%209%2052%2013%20PM.jpg", "Photo%20Feb%2026%202026%2C%209%2052%2028%20PM.jpg", "Photo%20Feb%2026%202026%2C%209%2052%2045%20PM.jpg", "Photo%20Feb%2026%202026%2C%209%2053%2020%20PM.jpg", "Photo%20Feb%2026%202026%2C%209%2053%2059%20PM.jpg", "Photo%20Feb%2026%202026%2C%209%2054%2020%20PM.jpg", "Photo%20Feb%2026%202026%2C%209%2054%2039%20PM.jpg", "Photo%20Feb%2026%202026%2C%209%2054%2054%20PM.jpg", "Photo%20Feb%2026%202026%2C%209%2055%2006%20PM.jpg", "Photo%20Feb%2026%202026%2C%209%2055%2017%20PM.jpg", "Photo%20Feb%2026%202026%2C%209%2055%2034%20PM.jpg", "Photo%20Feb%2026%202026%2C%209%2055%2044%20PM.jpg", "Photo%20Feb%2026%202026%2C%209%2055%2051%20PM.jpg", "Photo%20Feb%2026%202026%2C%209%2056%2006%20PM.jpg", "Photo%20Feb%2026%202026%2C%209%2056%2020%20PM.jpg", "Photo%20Feb%2026%202026%2C%209%2056%2030%20PM.jpg", "Photo%20Feb%2027%202026%2C%2010%2024%2047%20PM.jpg", "Photo%20Feb%2027%202026%2C%2010%2024%2050%20PM.jpg", "Photo%20Feb%2027%202026%2C%2010%2024%2055%20PM.jpg", "Photo%20Feb%2027%202026%2C%2010%2024%2058%20PM.jpg", "Photo%20Feb%2027%202026%2C%2010%2025%2002%20PM.jpg", "Photo%20Feb%2027%202026%2C%2010%2025%2005%20PM.jpg", "Photo%20Feb%2027%202026%2C%2010%2025%2009%20PM.jpg", "Photo%20Feb%2027%202026%2C%2010%2025%2014%20PM.jpg", "Photo%20Feb%2027%202026%2C%2010%2025%2017%20PM.jpg", "Photo%20Feb%2027%202026%2C%2010%2025%2022%20PM.jpg", "Photo%20Feb%2027%202026%2C%2010%2025%2025%20PM.jpg", "Photo%20Feb%2027%202026%2C%2010%2025%2031%20PM.jpg", "Photo%20Mar%2002%202026%2C%2011%2008%2026%20PM.jpg", "Photo%20Mar%2002%202026%2C%2011%2008%2033%20PM.jpg", "Photo%20Mar%2002%202026%2C%2011%2008%2037%20PM.jpg", "Photo%20Mar%2002%202026%2C%2011%2008%2041%20PM.jpg", "Photo%20Mar%2002%202026%2C%2011%2008%2046%20PM.jpg", "Photo%20Mar%2002%202026%2C%2011%2008%2050%20PM.jpg", "Photo%20Mar%2002%202026%2C%2011%2008%2058%20PM.jpg", "Photo%20Mar%2002%202026%2C%2011%2009%2021%20PM.jpg", "Photo%20Mar%2002%202026%2C%2011%2009%2048%20PM.jpg", "Photo%20Mar%2002%202026%2C%2011%2009%2052%20PM.jpg", "Photo%20Mar%2002%202026%2C%2011%2010%2000%20PM.jpg", "Photo%20Mar%2002%202026%2C%2011%2010%2051%20PM.jpg", "Photo%20Mar%2002%202026%2C%2011%2010%2055%20PM.jpg", "Photo%20Mar%2002%202026%2C%2011%2011%2000%20PM.jpg", "Photo%20Mar%2002%202026%2C%2011%2011%2003%20PM.jpg", "Photo%20Mar%2002%202026%2C%2011%2011%2007%20PM.jpg", "Photo%20Mar%2002%202026%2C%2011%2011%2010%20PM.jpg", "Photo%20Mar%2002%202026%2C%2011%2011%2016%20PM.jpg", "Photo%20Mar%2002%202026%2C%2011%2011%2021%20PM.jpg", "Photo%20Mar%2002%202026%2C%2011%2011%2026%20PM.jpg", "Photo%20Mar%2002%202026%2C%2011%2011%2030%20PM.jpg", "Photo%20Mar%2002%202026%2C%2011%2011%2035%20PM.jpg", "Photo%20Mar%2002%202026%2C%2011%2011%2039%20PM.jpg", "Photo%20Mar%2002%202026%2C%2011%2011%2047%20PM.jpg", "Photo%20Mar%2002%202026%2C%2011%2011%2054%20PM.jpg", "Photo%20Mar%2003%202026%2C%2011%2046%2001%20PM.jpg", "Photo%20Mar%2003%202026%2C%2011%2046%2005%20PM.jpg", "Photo%20Mar%2003%202026%2C%2011%2046%2009%20PM.jpg", "Photo%20Mar%2003%202026%2C%2011%2046%2013%20PM.jpg", "Photo%20Mar%2003%202026%2C%2011%2046%2017%20PM.jpg", "Photo%20Mar%2003%202026%2C%2011%2046%2021%20PM.jpg", "Photo%20Mar%2003%202026%2C%2011%2046%2024%20PM.jpg", "Photo%20Mar%2003%202026%2C%2011%2046%2029%20PM.jpg", "Photo%20Mar%2003%202026%2C%2011%2047%2002%20PM.jpg", "Photo%20Mar%2003%202026%2C%2011%2047%2006%20PM.jpg", "Photo%20Mar%2003%202026%2C%2011%2047%2009%20PM.jpg", "Photo%20Mar%2003%202026%2C%2011%2047%2012%20PM.jpg", "Photo%20Mar%2003%202026%2C%2011%2047%2015%20PM.jpg", "Photo%20Mar%2003%202026%2C%2011%2047%2019%20PM.jpg", "Photo%20Mar%2003%202026%2C%2011%2047%2022%20PM.jpg", "Photo%20Mar%2003%202026%2C%2011%2047%2027%20PM.jpg", "Photo%20Mar%2003%202026%2C%2011%2047%2031%20PM.jpg", "Photo%20Mar%2003%202026%2C%2011%2047%2036%20PM.jpg", "Photo%20Mar%2003%202026%2C%2011%2048%2003%20PM.jpg", "Photo%20Mar%2003%202026%2C%2011%2048%2008%20PM.jpg", "Photo%20Mar%2004%202026%2C%209%2028%2011%20PM.jpg", "Photo%20Mar%2004%202026%2C%209%2028%2017%20PM.jpg", "Photo%20Mar%2004%202026%2C%209%2028%2025%20PM.jpg", "Photo%20Mar%2004%202026%2C%209%2036%2053%20PM.jpg", "Photo%20Mar%2004%202026%2C%209%2036%2057%20PM.jpg", "Photo%20Mar%2004%202026%2C%209%2037%2007%20PM.jpg", "Photo%20Mar%2004%202026%2C%209%2037%2012%20PM.jpg", "Photo%20Mar%2004%202026%2C%209%2037%2016%20PM.jpg", "Photo%20Mar%2004%202026%2C%209%2037%2019%20PM.jpg", "Photo%20Mar%2004%202026%2C%209%2037%2025%20PM.jpg", "Photo%20Mar%2004%202026%2C%209%2037%2032%20PM.jpg", "Photo%20Mar%2004%202026%2C%209%2037%2034%20PM.jpg", "Photo%20Mar%2004%202026%2C%209%2037%2038%20PM.jpg", "Photo%20Mar%2004%202026%2C%209%2037%2043%20PM.jpg", "Photo%20Mar%2005%202026%2C%2011%2041%2053%20PM.jpg", "Photo%20Mar%2005%202026%2C%2011%2042%2025%20PM.jpg", "Photo%20Mar%2005%202026%2C%2011%2042%2028%20PM.jpg", "Photo%20Mar%2005%202026%2C%2011%2042%2032%20PM.jpg", "Photo%20Mar%2005%202026%2C%2011%2042%2035%20PM.jpg", "Photo%20Mar%2005%202026%2C%2011%2042%2040%20PM.jpg", "Photo%20Mar%2005%202026%2C%2011%2042%2045%20PM.jpg", "Photo%20Mar%2005%202026%2C%2011%2042%2054%20PM.jpg", "Photo%20Mar%2005%202026%2C%2011%2043%2003%20PM.jpg", "Photo%20Mar%2005%202026%2C%2011%2044%2010%20PM.jpg", "Photo%20Mar%2005%202026%2C%2011%2044%2016%20PM.jpg", "Photo%20Mar%2005%202026%2C%2011%2044%2020%20PM.jpg", "Photo%20Mar%2005%202026%2C%2011%2044%2024%20PM.jpg", "Photo%20Mar%2005%202026%2C%2011%2044%2027%20PM.jpg", "Photo%20Mar%2005%202026%2C%2011%2044%2031%20PM.jpg", "Photo%20Mar%2005%202026%2C%2011%2044%2034%20PM.jpg", "Photo%20Mar%2005%202026%2C%2011%2044%2038%20PM.jpg", "Photo%20Mar%2005%202026%2C%2011%2044%2045%20PM.jpg", "Photo%20Mar%2005%202026%2C%2011%2044%2049%20PM.jpg", "Photo%20Mar%2005%202026%2C%2011%2044%2053%20PM.jpg", "Photo%20Mar%2005%202026%2C%2011%2044%2057%20PM.jpg", "Photo%20Mar%2005%202026%2C%2011%2045%2001%20PM.jpg", "Photo%20Mar%2005%202026%2C%2011%2045%2005%20PM.jpg", "Photo%20Mar%2005%202026%2C%2011%2045%2010%20PM.jpg", "Photo%20Mar%2005%202026%2C%2011%2045%2013%20PM.jpg", "Photo%20Mar%2005%202026%2C%2011%2045%2018%20PM.jpg", "Photo%20Mar%2006%202026%2C%205%2010%2054%20AM.png"];
 
-    function createImageElement(filename, index) {
-      const div = document.createElement('div');
-      div.className = 'masonry-item';
-      div.setAttribute('data-index', index);
-      div.onclick = () => openLightbox(index);
+    /* === STATE === */
+    var videosShown = 0;
+    var photosShown = 0;
+    var VIDEOS_PER_LOAD = 6;
+    var PHOTOS_PER_LOAD = 24;
+    var lightboxIndex = -1;
+    var loadedImageIndices = [];
 
-      const img = document.createElement('img');
-      img.alt = 'KCU Student Trading Result';
-      img.loading = 'lazy';
-      img.decoding = 'async';
-      img.src = 'images/gains/thumbs/' + encodeURIComponent(filename);
-      img.onload = () => {
-        requestAnimationFrame(() => div.classList.add('visible'));
-      };
-
-      div.appendChild(img);
-      return div;
+    /* === COUNTER ANIMATION === */
+    function animateCounters() {
+      document.querySelectorAll('.stat-number').forEach(function(el) {
+        if (el.dataset.animated) return;
+        var rect = el.getBoundingClientRect();
+        if (rect.top > window.innerHeight || rect.bottom < 0) return;
+        el.dataset.animated = '1';
+        var target = parseInt(el.dataset.target);
+        var isMillion = el.dataset.isMillion === 'true';
+        var suffix = el.dataset.suffix || '';
+        var duration = 2000;
+        var start = performance.now();
+        function tick(now) {
+          var elapsed = now - start;
+          var progress = Math.min(elapsed / duration, 1);
+          var eased = 1 - Math.pow(1 - progress, 3);
+          var current = Math.floor(eased * target);
+          if (isMillion) {
+            el.textContent = current + suffix;
+          } else {
+            el.textContent = current.toLocaleString() + suffix;
+          }
+          if (progress < 1) requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
+      });
     }
 
-    function loadMore() {
-      const end = Math.min(currentIndex + BATCH_SIZE, ALL_IMAGES.length);
-      const fragment = document.createDocumentFragment();
-
-      for (let i = currentIndex; i < end; i++) {
-        const el = createImageElement(ALL_IMAGES[i], i);
-        fragment.appendChild(el);
-        loadedImages.push(ALL_IMAGES[i]);
-      }
-
-      grid.appendChild(fragment);
-      currentIndex = end;
-
-      countEl.textContent = 'Showing ' + currentIndex + ' of ' + ALL_IMAGES.length + ' results';
-
-      if (currentIndex >= ALL_IMAGES.length) {
-        loadMoreBtn.disabled = true;
-        loadMoreBtn.textContent = 'All Results Loaded';
+    /* === SCROLL FADE-IN === */
+    function revealOnScroll() {
+      var items = document.querySelectorAll('.video-card:not(.visible), .photo-item:not(.visible)');
+      for (var i = 0; i < items.length; i++) {
+        var rect = items[i].getBoundingClientRect();
+        if (rect.top < window.innerHeight - 60) {
+          items[i].classList.add('visible');
+        }
       }
     }
 
-    // Initial load
-    loadMore();
+    /* === VIDEOS === */
+    function loadMoreVideos() {
+      var grid = document.getElementById('videosGrid');
+      var end = Math.min(videosShown + VIDEOS_PER_LOAD, ALL_VIDEOS.length);
+      for (var i = videosShown; i < end; i++) {
+        var v = ALL_VIDEOS[i];
+        var card = document.createElement('div');
+        card.className = 'video-card';
+        card.innerHTML =
+          '<video controls preload="none" playsinline ' +
+          'controlsList="nodownload" oncontextmenu="return false" ' +
+          'poster="videos/thumbs/thumb-' + v.num + '.jpg">' +
+          '<source src="videos/testimonial-' + v.num + '.mp4" type="video/mp4">' +
+          '</video>' +
+          '<div class="video-quote">' + v.quote + '</div>';
+        grid.appendChild(card);
+      }
+      videosShown = end;
+      if (videosShown >= ALL_VIDEOS.length) {
+        document.getElementById('videosLoadMoreWrap').style.display = 'none';
+      }
+      requestAnimationFrame(revealOnScroll);
+    }
 
-    // ===== Lightbox =====
-    let lightboxIndex = 0;
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
+    /* === PHOTOS === */
+    function loadMorePhotos() {
+      var grid = document.getElementById('photosGrid');
+      var end = Math.min(photosShown + PHOTOS_PER_LOAD, ALL_IMAGES.length);
+      for (var i = photosShown; i < end; i++) {
+        var fname = ALL_IMAGES[i];
+        loadedImageIndices.push(i);
+        var item = document.createElement('div');
+        item.className = 'photo-item';
+        item.dataset.index = i;
+        item.onclick = (function(idx) { return function() { openLightbox(idx); }; })(i);
+        item.innerHTML = '<img loading="lazy" src="images/gains/thumbs/' + fname + '" alt="Student gain screenshot">';
+        grid.appendChild(item);
+      }
+      photosShown = end;
+      if (photosShown >= ALL_IMAGES.length) {
+        document.getElementById('photosLoadMoreWrap').style.display = 'none';
+      }
+      requestAnimationFrame(revealOnScroll);
+    }
 
-    function openLightbox(index) {
-      lightboxIndex = index;
-      lightboxImg.src = 'images/gains/' + encodeURIComponent(ALL_IMAGES[index]);
-      lightbox.classList.add('active');
+    /* === LIGHTBOX === */
+    function openLightbox(idx) {
+      lightboxIndex = idx;
+      var lb = document.getElementById('lightbox');
+      document.getElementById('lightboxImg').src = 'images/gains/' + ALL_IMAGES[idx];
+      lb.classList.add('open');
       document.body.style.overflow = 'hidden';
     }
-
     function closeLightbox(e) {
-      if (e.target === lightbox || e.target.classList.contains('lightbox-close')) {
-        lightbox.classList.remove('active');
-        document.body.style.overflow = '';
-      }
+      if (e && e.target !== document.getElementById('lightbox') && e.target !== document.querySelector('.lightbox-close')) return;
+      document.getElementById('lightbox').classList.remove('open');
+      document.body.style.overflow = '';
+      document.getElementById('lightboxImg').src = '';
     }
-
-    function navigateLightbox(e, dir) {
+    function navLightbox(e, dir) {
       e.stopPropagation();
-      lightboxIndex = (lightboxIndex + dir + ALL_IMAGES.length) % ALL_IMAGES.length;
-      lightboxImg.src = 'images/gains/' + encodeURIComponent(ALL_IMAGES[lightboxIndex]);
-      // Load more if needed
-      if (lightboxIndex >= currentIndex) {
-        loadMore();
-      }
+      var maxIdx = Math.min(photosShown, ALL_IMAGES.length) - 1;
+      lightboxIndex += dir;
+      if (lightboxIndex < 0) lightboxIndex = maxIdx;
+      if (lightboxIndex > maxIdx) lightboxIndex = 0;
+      document.getElementById('lightboxImg').src = 'images/gains/' + ALL_IMAGES[lightboxIndex];
     }
-
-    // Keyboard nav
-    document.addEventListener('keydown', (e) => {
-      if (!lightbox.classList.contains('active')) return;
-      if (e.key === 'Escape') { lightbox.classList.remove('active'); document.body.style.overflow = ''; }
-      if (e.key === 'ArrowLeft') navigateLightbox(e, -1);
-      if (e.key === 'ArrowRight') navigateLightbox(e, 1);
+    document.addEventListener('keydown', function(e) {
+      var lb = document.getElementById('lightbox');
+      if (!lb.classList.contains('open')) return;
+      if (e.key === 'Escape') { closeLightbox(); }
+      else if (e.key === 'ArrowLeft') { navLightbox(e, -1); }
+      else if (e.key === 'ArrowRight') { navLightbox(e, 1); }
     });
 
-    // ===== Animated Counters =====
-    function animateCounters() {
-      document.querySelectorAll('.stat-number[data-target]').forEach(el => {
-        const target = parseInt(el.dataset.target);
-        const suffix = el.dataset.suffix || '';
-        const prefix = el.dataset.prefix || '';
-        const duration = 2000;
-        const start = performance.now();
-
-        function update(now) {
-          const elapsed = now - start;
-          const progress = Math.min(elapsed / duration, 1);
-          // Ease out cubic
-          const eased = 1 - Math.pow(1 - progress, 3);
-          const current = Math.round(eased * target);
-          el.textContent = prefix + current.toLocaleString() + suffix;
-          if (progress < 1) requestAnimationFrame(update);
-        }
-        requestAnimationFrame(update);
-      });
+    /* === INIT === */
+    function init() {
+      loadMoreVideos();
+      loadMorePhotos();
+      animateCounters();
+      revealOnScroll();
     }
 
-    // ===== Video Testimonials =====
-    const ALL_VIDEOS = [
-      'testimonial-10.mp4', 'testimonial-11.mp4', 'testimonial-12.mp4',
-      'testimonial-13.mp4', 'testimonial-14.mp4', 'testimonial-15.mp4', 'testimonial-16.mp4', 'testimonial-17.mp4', 'testimonial-18.mp4',
-      'testimonial-19.mp4', 'testimonial-20.mp4', 'testimonial-21.mp4', 'testimonial-22.mp4', 'testimonial-23.mp4', 'testimonial-24.mp4',
-      'testimonial-25.mp4', 'testimonial-26.mp4', 'testimonial-27.mp4', 'testimonial-28.mp4', 'testimonial-29.mp4', 'testimonial-30.mp4'
-    ];
+    window.addEventListener('scroll', function() {
+      animateCounters();
+      revealOnScroll();
+    }, { passive: true });
 
-    const TESTIMONIAL_QUOTES = [
-      "The first thing I joined your course was because I wanted to start learning how to trade", // 10
-      "I decided to join because I was missing consistency in trading and I didn't really have any discipline or a set strategy so I was kind of just weighing it", // 11
-      "KCU has been extremely important in my life changing for the past couple of weeks in terms of confidence and understanding how the markets go and really proving to myself that I can do this", // 12
-      "Ace of Mash biggest results I've had since joining KSU was a $10,000 day", // 13
-      "Some of my biggest achievements in KCU have come from my recent consistency and discipline", // 14
-      "Account management, stop losses, discipline, patience", // 15
-      "So yeah, I mean, it's far exceeded my expectations", // 16
-      "Of course, like anybody else, I was always skeptical but I'm glad I made the choice to join KCU", // 17
-      "Yeah, so thanks to you so I'm more confident now while taking a trade because I know what is my game plan", // 18
-      "You know, most of the stuff that I do is self-learning, but for some reason I joined yours, and I think it was a best decision ever made", // 19
-      "I'm pretty much working on consistency I want to just have stable gains every day", // 20
-      "I'm just learning the system, you know, having discipline", // 21
-      "I joined KCU University because I thought I know how to trade and I was failing to stay consistent every day and have consecutive consistency in profitability", // 22
-      "So I had a very basic understanding of what day trading was", // 23
-      "The tip that you gave in module 12.1 about like rolling up positions in SPX", // 24
-      "But I would say since starting KCU, my level of patience has just grown so much and I'm waiting for those setups", // 25
-      "This program is really an absolute game changer and I mean it for that", // 26
-      "So yeah, I joined KCU because it seemed like no matter where I looked for strategy or some kind of a system, it all made sense", // 27
-      "And, you know, I would put my name out there for you because what I have learned from KCU so far has been again, life changing", // 28
-      "I was seeing consistency on a monthly and weekly basis which was something that I didn't have", // 29
-      "I just had to join you because, you know, I'm just looking to be looking to understand the structure of the system, be more disciplined" // 30
-    ];
-
-    const VIDEO_BATCH_SIZE = 6;
-    let currentVideoIndex = 0;
-    let loadedVideos = [];
-    const videoGrid = document.getElementById('video-grid');
-    const loadMoreVideosBtn = document.getElementById('load-more-videos-btn');
-    const videosCountEl = document.getElementById('videos-count');
-
-    function createVideoElement(filename, index) {
-      const div = document.createElement('div');
-      div.className = 'video-card reveal';
-      
-      // Get the video number for poster and quote
-      const videoNumber = String(index + 1).padStart(2, '0');
-      const posterPath = `videos/thumbs/thumb-${videoNumber}.jpg`;
-      const quote = TESTIMONIAL_QUOTES[index] || "Real student testimonial";
-      
-      div.innerHTML = `
-        <div class="video-embed">
-          <video 
-            controls 
-            preload="none" 
-            poster="${posterPath}"
-            controlsList="nodownload"
-            oncontextmenu="return false;"
-            ondragstart="return false;"
-            onselectstart="return false;">
-            <source src="videos/${filename}" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <div class="video-info">
-          <div class="testimonial-quote">"${quote}"</div>
-        </div>
-      `;
-
-      // Add reveal animation
-      requestAnimationFrame(() => div.classList.add('revealed'));
-      
-      return div;
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
     }
-
-    function loadMoreVideos() {
-      const end = Math.min(currentVideoIndex + VIDEO_BATCH_SIZE, ALL_VIDEOS.length);
-      const fragment = document.createDocumentFragment();
-
-      for (let i = currentVideoIndex; i < end; i++) {
-        const el = createVideoElement(ALL_VIDEOS[i], i);
-        fragment.appendChild(el);
-        loadedVideos.push(ALL_VIDEOS[i]);
-      }
-
-      videoGrid.appendChild(fragment);
-      currentVideoIndex = end;
-
-      videosCountEl.textContent = 'Showing ' + currentVideoIndex + ' of ' + ALL_VIDEOS.length + ' video testimonials';
-
-      if (currentVideoIndex >= ALL_VIDEOS.length) {
-        loadMoreVideosBtn.disabled = true;
-        loadMoreVideosBtn.innerHTML = 'All Videos Loaded <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="display:inline-block;vertical-align:middle;"><path d="m9 12-4-4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
-      }
-    }
-
-    // Load initial batch
-    loadMoreVideos();
-
-    // ===== Scroll Reveal =====
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('revealed');
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
-
-    // Counter trigger
-    let countersFired = false;
-    const statsObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting && !countersFired) {
-          countersFired = true;
-          animateCounters();
-        }
-      });
-    }, { threshold: 0.3 });
-
-    const statsBar = document.querySelector('.stats-bar');
-    if (statsBar) statsObserver.observe(statsBar);
   </script>
 </body>
 </html>
