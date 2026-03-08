@@ -52,7 +52,7 @@
     .videos-section { padding: 4rem 0; }
     .videos-section .section-header { text-align: center; margin-bottom: 3rem; }
     .videos-grid {
-      display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      display: grid; grid-template-columns: repeat(2, 1fr);
       gap: 2rem; max-width: 1100px; margin: 0 auto;
     }
     .video-card {
@@ -143,7 +143,7 @@
     /* Responsive */
     @media (max-width: 900px) {
       .photos-grid { columns: 2; }
-      .videos-grid { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+      .videos-grid { grid-template-columns: repeat(2, 1fr); }
       .stats-row { gap: 2.5rem; }
     }
     @media (max-width: 600px) {
