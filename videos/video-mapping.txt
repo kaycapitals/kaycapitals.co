@@ -1,0 +1,33 @@
+# Video Testimonial Mapping
+# Original Email -> New Filename
+
+Antoniod1000@gmail.com.mp4 -> testimonial-01.mp4
+a.selph@live.com.mp4 -> testimonial-02.mp4
+aisha.roberson1@gmail.com.mp4 -> testimonial-03.mp4
+alainc1997@yahoo.com.mp4 -> testimonial-04.mp4
+armen0126@gmail.com.mp4 -> testimonial-05.mp4
+brunalocastro@gmail.com.mp4 -> testimonial-06.mp4
+chaserp134@gmail.com.mp4 -> testimonial-07.mp4
+connoisseur.md@gmail.com.mp4 -> testimonial-08.mp4
+daltonlee.hensley@gmail.com.mp4 -> testimonial-09.mp4
+gandhij77@gmail.com.mp4 -> testimonial-10.mp4
+j.pourier@outlook.com.mp4 -> testimonial-11.mp4
+jarrelmw@gmail.com.mp4 -> testimonial-12.mp4
+jvcoccaro@gmail.com .mp4 -> testimonial-13.mp4
+keith.lynch27@yahoo.com.mp4 -> testimonial-14.mp4
+kerickson2@yahoo.com.mp4 -> testimonial-15.mp4
+lbx1967@gmail.com.mp4 -> testimonial-16.mp4
+marqusx69@gmail.com.mp4 -> testimonial-17.mp4
+mhimu22@gmail.com.mp4 -> testimonial-18.mp4
+mukhdomi3@gmail.com.mp4 -> testimonial-19.mp4
+nlglenn@gmail.com.mp4 -> testimonial-20.mp4
+ph-metatennis@live.com.mp4 -> testimonial-21.mp4
+samsalfiti@gmail.com.mp4 -> testimonial-22.mp4
+shanon.togneri@gmail.com.mp4 -> testimonial-23.mp4
+shifafarheen98@gmail.com.mp4 -> testimonial-24.mp4
+sholt.investments@gmail.com.mp4 -> testimonial-25.mp4
+sumanth.racharla@gmail.com.mp4 -> testimonial-26.mp4
+toddmk@comcast.net.mp4 -> testimonial-27.mp4
+tradingoptions0801@gmail.com.mp4 -> testimonial-28.mp4
+travis.rattray123@gmail.com.mp4 -> testimonial-29.mp4
+vinny.phx@gmail.com.mp4 -> testimonial-30.mp4

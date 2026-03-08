@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>if(location.protocol==='http:')location.replace('https://'+location.host+location.pathname+location.search)</script>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Results — Kay Capitals University | 400+ Verified Wins</title>
+  <meta name="description" content="See 400+ verified student results from Kay Capitals University. Real P&L screenshots, real broker statements, real wins from our trading community.">
+  <meta name="keywords" content="Kay Capitals results, Kay Capitals student results, Kay Capitals reviews, KCU results, trading mentorship results">
+  <link rel="canonical" href="https://kaycapitals.co/results">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="400+ Verified Student Results — Kay Capitals University">
+  <meta property="og:description" content="Real students. Real P&L. See 400+ verified wins from the Kay Capitals trading community.">
+  <meta property="og:url" content="https://kaycapitals.co/results">
+  <meta property="og:image" content="https://kaycapitals.co/og-image.jpg">
+  <meta property="og:site_name" content="Kay Capitals University">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@KayCapitals">
+  <meta name="twitter:title" content="400+ Verified Student Wins — Kay Capitals University">
+  <meta name="twitter:description" content="Real students. Real P&L. 400+ verified trading wins.">
+  <meta name="twitter:image" content="https://kaycapitals.co/og-image.jpg">
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Student Results — Kay Capitals University",
+    "description": "400+ verified student trading results from Kay Capitals University community.",
+    "url": "https://kaycapitals.co/results",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Kay Capitals University",
+      "url": "https://kaycapitals.co"
+    }
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ===== Results Page Specific Styles ===== */
+
+    /* Hero */
+    .results-hero {
+      min-height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 8rem 0 4rem;
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(212,175,55,.12) 0%, transparent 50%),
+        radial-gradient(ellipse at 20% 80%, rgba(212,175,55,.05) 0%, transparent 40%),
+        radial-gradient(ellipse at 80% 80%, rgba(212,175,55,.05) 0%, transparent 40%);
+      position: relative;
+      overflow: hidden;
+    }
+    .results-hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23D4AF37' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      opacity: 0.5;
+    }
+    .results-hero .container { position: relative; z-index: 1; }
+    .results-hero h1 {
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      font-weight: 800;
+      line-height: 1.08;
+      margin-bottom: 1.5rem;
+      letter-spacing: -0.02em;
+    }
+    .results-hero h1 .gold { color: var(--gold); }
+    .results-hero h1 .outline {
+      -webkit-text-stroke: 2px var(--gold);
+      color: transparent;
+    }
+    .results-hero .hero-desc {
+      font-size: 1.2rem;
+      color: var(--text-muted);
+      max-width: 650px;
+      margin: 0 auto 2rem;
+      line-height: 1.6;
+    }
+    .results-hero .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(212,175,55,.1);
+      border: 1px solid rgba(212,175,55,.25);
+      border-radius: 50px;
+      padding: 0.5rem 1.25rem;
+      font-size: 0.85rem;
+      color: var(--gold);
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      margin-bottom: 1.5rem;
+    }
+    .pulse-dot {
+      width: 8px; height: 8px;
+      background: #22c55e;
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(1.5); }
+    }
+
+    /* Stats Bar */
+    .stats-bar {
+      background: var(--bg-alt);
+      border-top: 1px solid rgba(212,175,55,.1);
+      border-bottom: 1px solid rgba(212,175,55,.1);
+      padding: 3rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .stats-bar::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 50%; transform: translateX(-50%);
+      width: 80%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(212,175,55,.4), transparent);
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      text-align: center;
+    }
+    .stat-block {
+      position: relative;
+    }
+    .stat-block:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 10%;
+      height: 80%;
+      width: 1px;
+      background: rgba(212,175,55,.15);
+    }
+    .stat-number {
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 800;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+    .stat-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 600;
+    }
+
+    /* Video Testimonials */
+    .video-testimonials {
+      padding: 6rem 0;
+      background: var(--bg);
+    }
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    .video-card {
+      background: var(--bg-card);
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,.06);
+      overflow: hidden;
+      transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+    }
+    .video-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(212,175,55,.3);
+      box-shadow: 0 20px 60px rgba(0,0,0,.4), 0 0 40px rgba(212,175,55,.05);
+    }
+    .video-embed {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      background: linear-gradient(135deg, #111 0%, #1a1a1a 100%);
+    }
+    .video-embed iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: 0;
+    }
+    .video-embed video {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: 0;
+      object-fit: cover;
+    }
+    .video-placeholder-inner {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+    .video-play-btn {
+      width: 64px; height: 64px;
+      border: 2px solid var(--gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      background: rgba(212,175,55,.1);
+    }
+    .video-play-btn svg {
+      width: 24px; height: 24px;
+      fill: var(--gold);
+      margin-left: 3px;
+    }
+    .video-card:hover .video-play-btn {
+      background: var(--gold);
+      transform: scale(1.1);
+    }
+    .video-card:hover .video-play-btn svg {
+      fill: #000;
+    }
+    .video-info {
+      padding: 1rem 1.5rem;
+      text-align: center;
+    }
+    .video-info .testimonial-label {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* Featured In */
+    .featured-in {
+      background: var(--bg-alt);
+      padding: 4rem 0;
+      border-top: 1px solid rgba(255,255,255,.04);
+      border-bottom: 1px solid rgba(255,255,255,.04);
+    }
+    .featured-logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 2.5rem;
+      margin-top: 2rem;
+    }
+    .featured-logo {
+      padding: 0.75rem 1.5rem;
+      background: rgba(255,255,255,.03);
+      border: 1px solid rgba(255,255,255,.06);
+      border-radius: var(--radius);
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+    }
+    .featured-logo:hover {
+      border-color: rgba(212,175,55,.3);
+      color: var(--gold);
+      background: rgba(212,175,55,.05);
+    }
+
+    /* Student Ticker */
+    .ticker-section {
+      padding: 2.5rem 0;
+      overflow: hidden;
+      background: var(--bg);
+      border-bottom: 1px solid rgba(255,255,255,.04);
+    }
+    .ticker-track {
+      display: flex;
+      gap: 3rem;
+      animation: tickerScroll 60s linear infinite;
+      width: max-content;
+    }
+    .ticker-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      white-space: nowrap;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    .ticker-item .ticker-stars {
+      color: var(--gold);
+      font-size: 0.75rem;
+      letter-spacing: 1px;
+    }
+    @keyframes tickerScroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* Photo Grid — Masonry */
+    .gains-section {
+      padding: 6rem 0;
+      background: var(--bg);
+    }
+    .masonry-grid {
+      columns: 3;
+      column-gap: 16px;
+      margin-top: 3rem;
+    }
+    .masonry-item {
+      break-inside: avoid;
+      margin-bottom: 16px;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .masonry-item.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .masonry-item img {
+      width: 100%;
+      display: block;
+      border-radius: 10px;
+      transition: transform 0.5s ease, filter 0.5s ease;
+    }
+    .masonry-item::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,.06);
+      pointer-events: none;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .masonry-item:hover::after {
+      border-color: rgba(212,175,55,.3);
+      box-shadow: 0 12px 40px rgba(0,0,0,.5), 0 0 30px rgba(212,175,55,.08);
+    }
+    .masonry-item:hover img {
+      transform: scale(1.03);
+      filter: brightness(1.08);
+    }
+
+    /* Load More */
+    .load-more-wrap {
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .load-more-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1rem 2.5rem;
+      background: transparent;
+      border: 2px solid var(--gold);
+      color: var(--gold);
+      font-family: var(--font);
+      font-weight: 700;
+      font-size: 0.95rem;
+      border-radius: var(--radius);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      letter-spacing: 0.3px;
+    }
+    .load-more-btn:hover {
+      background: var(--gold);
+      color: #000;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(212,175,55,.25);
+    }
+    .load-more-btn:disabled {
+      opacity: 0.4;
+      cursor: default;
+      transform: none;
+      box-shadow: none;
+    }
+    .images-count {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      margin-top: 1rem;
+    }
+
+    /* Lightbox */
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 10000;
+      background: rgba(0,0,0,.92);
+      backdrop-filter: blur(20px);
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .lightbox.active {
+      display: flex;
+      opacity: 1;
+    }
+    .lightbox img {
+      max-width: 90vw;
+      max-height: 90vh;
+      border-radius: 8px;
+      box-shadow: 0 20px 80px rgba(0,0,0,.6);
+      animation: lightboxIn 0.3s ease;
+    }
+    @keyframes lightboxIn {
+      from { transform: scale(0.9); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+    .lightbox-close {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      width: 48px; height: 48px;
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: 50%;
+      color: #fff;
+      font-size: 1.5rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      z-index: 10001;
+    }
+    .lightbox-close:hover {
+      background: var(--gold);
+      color: #000;
+      border-color: var(--gold);
+    }
+    .lightbox-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 48px; height: 48px;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 50%;
+      color: #fff;
+      font-size: 1.2rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      z-index: 10001;
+    }
+    .lightbox-nav:hover {
+      background: var(--gold);
+      color: #000;
+      border-color: var(--gold);
+    }
+    .lightbox-prev { left: 1.5rem; }
+    .lightbox-next { right: 1.5rem; }
+
+    /* CTA Section */
+    .cta-section {
+      padding: 8rem 0;
+      text-align: center;
+      position: relative;
+      background:
+        radial-gradient(ellipse at 50% 100%, rgba(212,175,55,.1) 0%, transparent 50%),
+        var(--bg);
+    }
+    .cta-section h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 800;
+      margin-bottom: 1rem;
+      line-height: 1.15;
+    }
+    .cta-section h2 span { color: var(--gold); }
+    .cta-section p {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      max-width: 550px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.6;
+    }
+    .cta-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* Scroll animations */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .reveal.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .masonry-grid { columns: 2; }
+      .video-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+    }
+    @media (max-width: 768px) {
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+      }
+      .stat-block:not(:last-child)::after { display: none; }
+      .results-hero { min-height: 60vh; padding: 7rem 0 3rem; }
+      .results-hero h1 { font-size: clamp(2rem, 8vw, 3rem); }
+      .masonry-grid { columns: 2; column-gap: 10px; }
+      .masonry-item { margin-bottom: 10px; }
+    }
+    @media (max-width: 480px) {
+      .masonry-grid { columns: 1; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .featured-logos { gap: 1rem; }
+      .featured-logo { padding: 0.5rem 1rem; font-size: 0.7rem; }
+      .video-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="/" class="nav-logo">KAY CAPITALS</a>
+      <button class="nav-toggle" aria-label="Menu" onclick="this.classList.toggle('active');document.querySelector('.nav-links').classList.toggle('open')"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="results.html" class="active">Results</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="https://youtube.com/@KayCapitals" target="_blank" rel="noopener">YouTube</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="results-hero">
+    <div class="container">
+      <div class="hero-badge"><span class="pulse-dot"></span> Live Community Results</div>
+      <h1>The Proof Is<br>In The <span class="gold">P&amp;L</span></h1>
+      <p class="hero-desc">400+ verified student wins. No cherry-picking. No fake screenshots. Just raw, unfiltered results from our trading community — posted by students themselves.</p>
+      <a href="#gains" class="btn">See The Results ↓</a>
+    </div>
+  </section>
+
+  <!-- Stats Bar -->
+  <section class="stats-bar">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-block reveal">
+          <div class="stat-number" data-target="1000" data-suffix="+">0</div>
+          <div class="stat-label">Students Mentored</div>
+        </div>
+        <div class="stat-block reveal">
+          <div class="stat-number" data-target="400" data-suffix="+">0</div>
+          <div class="stat-label">Verified Wins</div>
+        </div>
+        <div class="stat-block reveal">
+          <div class="stat-number" data-target="1" data-suffix="M+" data-prefix="">0</div>
+          <div class="stat-label">Community Following</div>
+        </div>
+        <div class="stat-block reveal">
+          <div class="stat-number" data-target="5" data-suffix="/5" data-prefix="">0</div>
+          <div class="stat-label">Green Days This Week</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scrolling Student Quote Ticker -->
+  <section class="ticker-section">
+    <div class="ticker-track" id="ticker">
+      <div class="ticker-item"><span class="ticker-stars">★★★★★</span> "KCU changed my life. Green every single week now." — Callan</div>
+      <div class="ticker-item"><span class="ticker-stars">★★★★★</span> "Went from -$5K to +$12K in my first month." — Marcus</div>
+      <div class="ticker-item"><span class="ticker-stars">★★★★★</span> "The risk management alone is worth 10x." — Reggie</div>
+      <div class="ticker-item"><span class="ticker-stars">★★★★★</span> "Quit my 9-5 after 4 months in KCU." — David</div>
+      <div class="ticker-item"><span class="ticker-stars">★★★★★</span> "Somesh doesn't sugarcoat. That's exactly what I needed." — Steven</div>
+      <div class="ticker-item"><span class="ticker-stars">★★★★★</span> "Best investment I've ever made in myself." — Ram</div>
+      <div class="ticker-item"><span class="ticker-stars">★★★★★</span> "From blowing accounts to consistent profits." — Jaylen</div>
+      <div class="ticker-item"><span class="ticker-stars">★★★★★</span> "The psychology training is unmatched." — Priya</div>
+      <!-- Duplicated for infinite scroll -->
+      <div class="ticker-item"><span class="ticker-stars">★★★★★</span> "KCU changed my life. Green every single week now." — Callan</div>
+      <div class="ticker-item"><span class="ticker-stars">★★★★★</span> "Went from -$5K to +$12K in my first month." — Marcus</div>
+      <div class="ticker-item"><span class="ticker-stars">★★★★★</span> "The risk management alone is worth 10x." — Reggie</div>
+      <div class="ticker-item"><span class="ticker-stars">★★★★★</span> "Quit my 9-5 after 4 months in KCU." — David</div>
+      <div class="ticker-item"><span class="ticker-stars">★★★★★</span> "Somesh doesn't sugarcoat. That's exactly what I needed." — Steven</div>
+      <div class="ticker-item"><span class="ticker-stars">★★★★★</span> "Best investment I've ever made in myself." — Ram</div>
+      <div class="ticker-item"><span class="ticker-stars">★★★★★</span> "From blowing accounts to consistent profits." — Jaylen</div>
+      <div class="ticker-item"><span class="ticker-stars">★★★★★</span> "The psychology training is unmatched." — Priya</div>
+    </div>
+  </section>
+
+  <!-- Video Testimonials -->
+  <section class="video-testimonials">
+    <div class="container">
+      <div class="text-center reveal">
+        <p class="section-label">Video Testimonials</p>
+        <h2 class="section-title">30 Video Testimonials</h2>
+        <p class="section-subtitle">Real students sharing their real journeys inside Kay Capitals University.</p>
+      </div>
+      <div class="video-grid" id="video-grid"></div>
+      <div class="load-more-wrap">
+        <button class="load-more-btn" id="load-more-videos-btn" onclick="loadMoreVideos()">
+          Load More Videos
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="display:inline-block;vertical-align:middle;"><path d="M8 3v10M3 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="images-count" id="videos-count"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- As Featured In -->
+  <section class="featured-in">
+    <div class="container text-center reveal">
+      <p class="section-label">As Featured In</p>
+      <h2 class="section-title">Recognised by Leading Publications</h2>
+      <div class="featured-logos">
+        <a href="https://www.republicworld.com/initiatives/somesh-kay-capitals-thrives-on-authenticity-real-trading-strategies-and-real-growth" target="_blank" rel="noopener" class="featured-logo">Republic World</a>
+        <a href="https://www.ibtimes.co.in/somesh-kay-capitals-creates-legacy-his-own-883007" target="_blank" rel="noopener" class="featured-logo">IBTimes</a>
+        <a href="https://techbullion.com/somesh-kay-aka-kay-capitals-rises-as-a-self-made-day-trader-and-entrepreneurial-talent/" target="_blank" rel="noopener" class="featured-logo">TechBullion</a>
+        <a href="https://ventsmagazine.com/2025/05/07/tradepreneur-somesh-kay-capitals-creates-a-success-story-from-the-ground-up/" target="_blank" rel="noopener" class="featured-logo">Vents Magazine</a>
+        <a href="https://www.netnewsledger.com/2025/05/10/standing-distinctive-with-his-unique-trading-strategies-meet-somesh-of-kay-capitals/" target="_blank" rel="noopener" class="featured-logo">NetNewsLedger</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gains Photo Grid -->
+  <section class="gains-section" id="gains">
+    <div class="container">
+      <div class="text-center reveal">
+        <p class="section-label">Community Wins</p>
+        <h2 class="section-title">400+ Student P&amp;L Screenshots</h2>
+        <p class="section-subtitle">Every single one of these was posted by a real student in our Discord. Unedited. Unfiltered.</p>
+      </div>
+      <div class="masonry-grid" id="masonry-grid"></div>
+      <div class="load-more-wrap">
+        <button class="load-more-btn" id="load-more-btn" onclick="loadMore()">
+          Load More Results
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="display:inline-block;vertical-align:middle;"><path d="M8 3v10M3 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="images-count" id="images-count"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container reveal">
+      <p class="section-label">Ready?</p>
+      <h2>Stop Watching.<br><span>Start Trading.</span></h2>
+      <p>Join 1,000+ students who are already building real trading careers. Your results could be next on this page.</p>
+      <div class="cta-buttons">
+        <a href="https://youtube.com/@KayCapitals" class="btn" target="_blank" rel="noopener">Watch Free on YouTube</a>
+        <a href="/" class="btn btn-outline">Learn About KCU</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p class="footer-copy">&copy; 2026 Kay Capitals University. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://instagram.com/kaycapitals" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+        <a href="https://youtube.com/@KayCapitals" target="_blank" rel="noopener" aria-label="YouTube">YouTube</a>
+        <a href="https://twitter.com/KayCapitals" target="_blank" rel="noopener" aria-label="X / Twitter">X</a>
+        <a href="https://facebook.com/KayCapitals" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+    <button class="lightbox-close" onclick="closeLightbox(event)" aria-label="Close">✕</button>
+    <button class="lightbox-nav lightbox-prev" onclick="navigateLightbox(event, -1)" aria-label="Previous">‹</button>
+    <img src="" alt="Student Result" id="lightbox-img">
+    <button class="lightbox-nav lightbox-next" onclick="navigateLightbox(event, 1)" aria-label="Next">›</button>
+  </div>
+
+  <script>
+    // ===== Image Data (sorted by file size — largest/most impressive first) =====
+    const ALL_IMAGES = ["Photo Feb 23 2026, 10 06 23 PM.png", "Photo Feb 12 2026, 9 00 17 AM.png", "Photo Feb 19 2026, 6 14 42 PM.png", "Photo Feb 12 2026, 8 58 48 AM.png", "Photo Feb 12 2026, 9 05 36 AM.png", "Photo Feb 12 2026, 8 57 57 AM.png", "Photo Feb 27 2026, 7 39 04 PM.png", "Photo Feb 12 2026, 8 56 31 AM.png", "Photo Feb 23 2026, 10 04 04 PM.png", "Photo Feb 25 2026, 3 18 42 PM.png", "Photo Mar 06 2026, 5 10 54 AM.png", "Photo Feb 20 2026, 7 54 31 PM.jpg", "Photo Feb 11 2026, 4 20 37 PM.jpg", "Photo Feb 27 2026, 10 25 14 PM.jpg", "Photo Mar 04 2026, 9 37 34 PM.jpg", "Photo Feb 26 2026, 9 52 45 PM.jpg", "Photo Mar 03 2026, 11 48 08 PM.jpg", "Photo Feb 12 2026, 9 00 35 AM.jpg", "Photo Mar 02 2026, 11 11 16 PM.jpg", "Photo Feb 20 2026, 7 56 18 PM.jpg", "Photo Feb 24 2026, 9 40 59 PM.jpg", "Photo Feb 26 2026, 9 49 49 PM.jpg", "Photo Feb 20 2026, 7 57 56 PM.jpg", "Photo Feb 25 2026, 8 30 13 PM.jpg", "Photo Feb 27 2026, 10 25 22 PM.jpg", "Photo Feb 12 2026, 9 07 15 AM.jpg", "Photo Mar 05 2026, 11 45 13 PM.jpg", "Photo Feb 25 2026, 8 31 12 PM.jpg", "Photo Feb 27 2026, 10 25 05 PM.jpg", "Photo Feb 13 2026, 6 28 31 PM.jpg", "Photo Feb 11 2026, 10 12 59 PM.jpg", "Photo Feb 12 2026, 9 00 53 AM.jpg", "Photo Feb 24 2026, 9 39 48 PM.jpg", "Photo Mar 02 2026, 11 08 46 PM.jpg", "Photo Feb 26 2026, 9 53 20 PM.jpg", "Photo Mar 05 2026, 11 45 01 PM.jpg", "Photo Feb 26 2026, 9 51 17 PM.jpg", "Photo Feb 25 2026, 8 31 23 PM.jpg", "Photo Feb 20 2026, 7 56 22 PM.jpg", "Photo Mar 05 2026, 11 42 35 PM.jpg", "Photo Feb 19 2026, 6 17 35 PM.jpg", "Photo Feb 10 2026, 3 44 30 AM.jpg", "Photo Feb 18 2026, 9 00 16 PM.jpg", "Photo Feb 18 2026, 8 59 36 PM.jpg", "Photo Mar 04 2026, 9 37 07 PM.jpg", "Photo Mar 05 2026, 11 44 27 PM.jpg", "Photo Feb 23 2026, 10 05 42 PM.jpg", "Photo Feb 11 2026, 10 13 41 PM.jpg", "Photo Mar 05 2026, 11 44 53 PM.jpg", "Photo Feb 11 2026, 10 14 43 PM.jpg", "Photo Feb 18 2026, 9 00 13 PM.jpg", "Photo Feb 23 2026, 10 07 25 PM.jpg", "Photo Feb 13 2026, 6 27 03 PM.jpg", "Photo Feb 12 2026, 8 58 23 AM.jpg", "Photo Feb 25 2026, 8 30 28 PM.jpg", "Photo Feb 27 2026, 10 25 17 PM.jpg", "Photo Feb 25 2026, 8 30 21 PM.jpg", "Photo Feb 12 2026, 8 56 15 AM.jpg", "Photo Feb 25 2026, 8 30 18 PM.jpg", "Photo Feb 18 2026, 9 00 27 PM.jpg", "Photo Feb 20 2026, 7 58 04 PM.jpg", "Photo Feb 11 2026, 10 12 31 PM.jpg", "Photo Mar 02 2026, 11 11 00 PM.jpg", "Photo Feb 26 2026, 9 56 30 PM.jpg", "Photo Feb 24 2026, 9 41 03 PM.jpg", "Photo Mar 04 2026, 9 37 16 PM.jpg", "Photo Feb 13 2026, 6 28 41 PM.jpg", "Photo Feb 12 2026, 9 06 12 AM.jpg", "Photo Feb 20 2026, 7 54 29 PM.jpg", "Photo Feb 11 2026, 10 12 02 PM.jpg", "Photo Feb 18 2026, 9 00 24 PM.jpg", "Photo Feb 12 2026, 9 03 54 AM.jpg", "Photo Feb 26 2026, 9 55 17 PM.jpg", "Photo Feb 20 2026, 7 55 37 PM.jpg", "Photo Mar 02 2026, 11 11 21 PM.jpg", "Photo Feb 26 2026, 9 52 13 PM.jpg", "Photo Feb 17 2026, 8 24 23 PM.jpg", "Photo Mar 05 2026, 11 45 10 PM.jpg", "Photo Feb 23 2026, 10 06 32 PM.jpg", "Photo Feb 26 2026, 9 50 23 PM.jpg", "Photo Mar 02 2026, 11 10 55 PM.jpg", "Photo Mar 03 2026, 11 47 22 PM.jpg", "Photo Feb 12 2026, 9 05 12 AM.jpg", "Photo Feb 26 2026, 9 56 20 PM.jpg", "Photo Feb 20 2026, 7 57 37 PM.jpg", "Photo Feb 11 2026, 10 14 00 PM.jpg", "Photo Feb 20 2026, 7 55 48 PM.jpg", "Photo Feb 26 2026, 9 56 06 PM.jpg", "Photo Mar 02 2026, 11 08 26 PM.jpg", "Photo Feb 12 2026, 9 03 00 AM.jpg", "Photo Feb 17 2026, 8 25 01 PM.jpg", "Photo Feb 26 2026, 9 51 39 PM.jpg", "Photo Feb 12 2026, 8 57 02 AM.jpg", "Photo Feb 20 2026, 7 54 39 PM.jpg", "Photo Feb 25 2026, 8 30 30 PM.jpg", "Photo Mar 05 2026, 11 44 20 PM.jpg", "Photo Feb 12 2026, 9 04 53 AM.jpg", "Photo Feb 11 2026, 10 12 52 PM.jpg", "Photo Feb 12 2026, 8 56 06 AM.jpg", "Photo Feb 26 2026, 9 55 51 PM.jpg", "Photo Feb 13 2026, 6 27 42 PM.jpg", "Photo Feb 12 2026, 8 59 18 AM.jpg", "Photo Feb 13 2026, 6 27 19 PM.jpg", "Photo Mar 02 2026, 11 11 26 PM.jpg", "Photo Feb 24 2026, 9 38 47 PM.jpg", "Photo Feb 18 2026, 9 00 29 PM.jpg", "Photo Feb 10 2026, 3 45 49 AM.jpg", "Photo Feb 23 2026, 10 06 57 PM.jpg", "Photo Feb 17 2026, 8 25 40 PM.jpg", "Photo Feb 23 2026, 10 07 42 PM.jpg", "Photo Feb 09 2026, 11 27 21 PM.jpg", "Photo Mar 05 2026, 11 43 03 PM.jpg", "Photo Feb 18 2026, 9 00 11 PM.jpg", "Photo Feb 26 2026, 9 53 59 PM.jpg", "Photo Mar 05 2026, 11 42 32 PM.jpg", "Photo Feb 13 2026, 6 28 29 PM.jpg", "Photo Feb 25 2026, 8 30 36 PM.jpg", "Photo Feb 26 2026, 9 51 49 PM.jpg", "Photo Mar 04 2026, 9 37 25 PM.jpg", "Photo Feb 09 2026, 11 26 21 PM.jpg", "Photo Feb 12 2026, 9 01 51 AM.jpg", "Photo Feb 19 2026, 6 16 37 PM.jpg", "Photo Mar 04 2026, 9 28 11 PM.jpg", "Photo Feb 12 2026, 9 03 08 AM.jpg", "Photo Feb 12 2026, 9 08 12 AM.jpg", "Photo Mar 02 2026, 11 11 10 PM.jpg", "Photo Mar 02 2026, 11 10 00 PM.jpg", "Photo Feb 12 2026, 8 58 15 AM.jpg", "Photo Feb 13 2026, 6 26 54 PM.jpg", "Photo Mar 03 2026, 11 46 24 PM.jpg", "Photo Feb 26 2026, 9 55 06 PM.jpg", "Photo Feb 12 2026, 9 01 01 AM.jpg", "Photo Feb 23 2026, 10 08 17 PM.jpg", "Photo Mar 05 2026, 11 44 42 PM.jpg", "Photo Feb 23 2026, 10 07 11 PM.jpg", "Photo Feb 11 2026, 10 14 20 PM.jpg", "Photo Mar 04 2026, 9 37 22 PM.jpg", "Photo Feb 24 2026, 9 38 43 PM.jpg", "Photo Feb 11 2026, 10 12 09 PM.jpg", "Photo Mar 04 2026, 9 37 32 PM.jpg", "Photo Feb 13 2026, 6 27 11 PM.jpg", "Photo Feb 13 2026, 6 28 21 PM.jpg", "Photo Feb 27 2026, 10 24 58 PM.jpg", "Photo Feb 24 2026, 9 41 08 PM.jpg", "Photo Feb 12 2026, 9 03 28 AM.jpg", "Photo Feb 24 2026, 9 38 50 PM.jpg", "Photo Feb 27 2026, 10 25 09 PM.jpg", "Photo Feb 20 2026, 7 55 30 PM.jpg", "Photo Feb 26 2026, 9 49 37 PM.jpg", "Photo Feb 17 2026, 8 22 53 PM.jpg", "Photo Feb 24 2026, 9 40 04 PM.jpg", "Photo Mar 05 2026, 11 44 38 PM.jpg", "Photo Feb 13 2026, 6 28 49 PM.jpg", "Photo Feb 11 2026, 10 12 28 PM.jpg", "Photo Feb 26 2026, 9 54 20 PM.jpg", "Photo Feb 25 2026, 8 31 33 PM.jpg", "Photo Feb 11 2026, 10 14 56 PM.jpg", "Photo Feb 26 2026, 9 52 28 PM.jpg", "Photo Mar 03 2026, 11 47 06 PM.jpg", "Photo Feb 12 2026, 8 57 27 AM.jpg", "Photo Feb 26 2026, 9 50 15 PM.jpg", "Photo Feb 09 2026, 11 27 43 PM.jpg", "Photo Feb 20 2026, 7 56 27 PM.jpg", "Photo Feb 12 2026, 9 01 41 AM.jpg", "Photo Feb 24 2026, 9 39 55 PM.jpg", "Photo Feb 12 2026, 8 57 36 AM.jpg", "Photo Feb 18 2026, 8 59 41 PM.jpg", "Photo Feb 24 2026, 9 39 51 PM.jpg", "Photo Feb 12 2026, 9 06 58 AM.jpg", "Photo Feb 17 2026, 8 25 48 PM.jpg", "Photo Mar 04 2026, 9 37 43 PM.jpg", "Photo Feb 12 2026, 9 05 57 AM.jpg", "Photo Feb 11 2026, 10 12 39 PM.jpg", "Photo Feb 11 2026, 10 14 10 PM.jpg", "Photo Feb 12 2026, 9 07 48 AM.jpg", "Photo Feb 20 2026, 7 56 14 PM.jpg", "Photo Feb 25 2026, 8 30 25 PM.jpg", "Photo Feb 12 2026, 9 07 05 AM.jpg", "Photo Mar 04 2026, 9 37 28 PM.jpg", "Photo Feb 24 2026, 9 40 24 PM.jpg", "Photo Feb 17 2026, 8 24 44 PM.jpg", "Photo Feb 26 2026, 9 50 40 PM.jpg", "Photo Feb 26 2026, 9 50 51 PM.jpg", "Photo Mar 05 2026, 11 44 24 PM.jpg", "Photo Feb 10 2026, 1 50 06 AM.jpg", "Photo Feb 20 2026, 7 55 45 PM.jpg", "Photo Feb 10 2026, 1 51 00 AM.jpg", "Photo Feb 10 2026, 3 44 40 AM.jpg", "Photo Feb 26 2026, 9 49 18 PM.jpg", "Photo Mar 03 2026, 11 46 13 PM.jpg", "Photo Feb 11 2026, 10 12 20 PM.jpg", "Photo Feb 09 2026, 11 27 15 PM.jpg", "Photo Feb 12 2026, 8 56 54 AM.jpg", "Photo Feb 11 2026, 10 12 06 PM.jpg", "Photo Feb 12 2026, 9 05 26 AM.jpg", "Photo Feb 23 2026, 10 04 25 PM.jpg", "Photo Feb 10 2026, 3 47 29 AM.jpg", "Photo Mar 05 2026, 11 44 45 PM.jpg", "Photo Mar 03 2026, 11 48 03 PM.jpg", "Photo Mar 02 2026, 11 09 27 PM.jpg", "Photo Mar 04 2026, 9 37 19 PM.jpg", "Photo Feb 10 2026, 1 51 22 AM.jpg", "Photo Feb 09 2026, 11 28 05 PM.jpg", "Photo Feb 11 2026, 10 14 04 PM.jpg", "Photo Mar 03 2026, 11 47 09 PM.jpg", "Photo Feb 20 2026, 7 54 36 PM.jpg", "Photo Mar 02 2026, 11 11 03 PM.jpg", "Photo Mar 03 2026, 11 47 15 PM.jpg", "Photo Feb 20 2026, 7 58 00 PM.jpg", "Photo Mar 03 2026, 11 46 01 PM.jpg", "Photo Feb 23 2026, 10 06 19 PM.jpg", "Photo Feb 11 2026, 10 13 04 PM.jpg", "Photo Feb 18 2026, 9 00 19 PM.jpg", "Photo Feb 12 2026, 8 59 55 AM.jpg", "Photo Feb 12 2026, 9 06 29 AM.jpg", "Photo Mar 03 2026, 11 46 09 PM.jpg", "Photo Feb 10 2026, 3 46 12 AM.jpg", "Photo Mar 02 2026, 11 09 52 PM.jpg", "Photo Feb 12 2026, 8 59 06 AM.jpg", "Photo Mar 05 2026, 11 41 53 PM.jpg", "Photo Mar 04 2026, 9 37 38 PM.jpg", "Photo Feb 10 2026, 3 45 41 AM.jpg", "Photo Mar 02 2026, 11 09 48 PM.jpg", "Photo Feb 17 2026, 8 24 13 PM.jpg", "Photo Feb 12 2026, 9 02 28 AM.jpg", "Photo Feb 09 2026, 11 27 11 PM.jpg", "Photo Feb 26 2026, 9 52 01 PM.jpg", "Photo Feb 17 2026, 8 25 21 PM.jpg", "Photo Feb 13 2026, 6 27 51 PM.jpg", "Photo Feb 19 2026, 6 17 00 PM.jpg", "Photo Feb 23 2026, 10 08 33 PM.jpg", "Photo Mar 02 2026, 11 11 47 PM.jpg", "Photo Mar 05 2026, 11 44 34 PM.jpg", "Photo Feb 20 2026, 7 57 51 PM.jpg", "Photo Mar 05 2026, 11 44 49 PM.jpg", "Photo Mar 02 2026, 11 11 07 PM.jpg", "Photo Feb 24 2026, 9 39 59 PM.jpg", "Photo Feb 18 2026, 9 00 53 PM.jpg", "Photo Mar 04 2026, 9 28 25 PM.jpg", "Photo Feb 24 2026, 9 40 43 PM.jpg", "Photo Feb 10 2026, 1 51 17 AM.jpg", "Photo Mar 05 2026, 11 44 57 PM.jpg", "Photo Feb 11 2026, 10 12 47 PM.jpg", "Photo Feb 20 2026, 7 57 42 PM.jpg", "Photo Feb 12 2026, 8 59 26 AM.jpg", "Photo Feb 19 2026, 6 17 10 PM.jpg", "Photo Mar 05 2026, 11 44 31 PM.jpg", "Photo Feb 12 2026, 9 04 43 AM.jpg", "Photo Feb 20 2026, 7 58 08 PM.jpg", "Photo Feb 12 2026, 9 03 37 AM.jpg", "Photo Mar 03 2026, 11 46 17 PM.jpg", "Photo Feb 11 2026, 10 12 17 PM.jpg", "Photo Mar 02 2026, 11 08 37 PM.jpg", "Photo Feb 11 2026, 10 14 15 PM.jpg", "Photo Feb 09 2026, 11 27 32 PM.jpg", "Photo Feb 20 2026, 7 55 52 PM.jpg", "Photo Feb 12 2026, 9 00 43 AM.jpg", "Photo Feb 12 2026, 9 02 19 AM.jpg", "Photo Mar 03 2026, 11 46 29 PM.jpg", "Photo Feb 10 2026, 3 46 58 AM.jpg", "Photo Feb 23 2026, 10 04 04 PM.jpg", "Photo Feb 13 2026, 6 28 37 PM.jpg", "Photo Feb 10 2026, 3 47 46 AM.jpg", "Photo Feb 11 2026, 10 12 13 PM.jpg", "Photo Mar 04 2026, 9 37 12 PM.jpg", "Photo Feb 12 2026, 9 02 01 AM.jpg", "Photo Feb 12 2026, 8 56 41 AM.jpg", "Photo Feb 20 2026, 7 55 33 PM.jpg", "Photo Feb 10 2026, 1 50 54 AM.jpg", "Photo Feb 11 2026, 10 12 55 PM.jpg", "Photo Feb 09 2026, 11 27 25 PM.jpg", "Photo Feb 26 2026, 9 54 54 PM.jpg", "Photo Feb 25 2026, 8 31 17 PM.jpg", "Photo Feb 20 2026, 7 54 20 PM.jpg", "Photo Feb 27 2026, 10 24 47 PM.jpg", "Photo Feb 12 2026, 8 59 45 AM.jpg", "Photo Feb 26 2026, 9 51 02 PM.jpg", "Photo Feb 12 2026, 8 57 45 AM.jpg", "Photo Feb 11 2026, 10 14 47 PM.jpg", "Photo Feb 27 2026, 10 25 02 PM.jpg", "Photo Mar 03 2026, 11 47 27 PM.jpg", "Photo Feb 10 2026, 3 44 51 AM.jpg", "Photo Feb 12 2026, 8 55 51 AM.jpg", "Photo Feb 24 2026, 9 39 14 PM.jpg", "Photo Feb 10 2026, 1 50 46 AM.jpg", "Photo Feb 11 2026, 10 12 25 PM.jpg", "Photo Feb 23 2026, 10 05 52 PM.jpg", "Photo Feb 20 2026, 7 55 41 PM.jpg", "Photo Feb 11 2026, 10 13 45 PM.jpg", "Photo Feb 10 2026, 3 46 33 AM.jpg", "Photo Feb 12 2026, 8 58 04 AM.jpg", "Photo Feb 19 2026, 6 16 22 PM.jpg", "Photo Feb 13 2026, 6 26 51 PM.jpg", "Photo Mar 04 2026, 9 36 53 PM.jpg", "Photo Mar 04 2026, 9 36 57 PM.jpg", "Photo Mar 03 2026, 11 46 21 PM.jpg", "Photo Feb 17 2026, 8 24 52 PM.jpg", "Photo Mar 04 2026, 9 28 17 PM.jpg", "Photo Mar 02 2026, 11 11 54 PM.jpg", "Photo Feb 17 2026, 8 23 57 PM.jpg", "Photo Feb 12 2026, 9 00 25 AM.jpg", "Photo Feb 25 2026, 8 31 08 PM.jpg", "Photo Feb 26 2026, 9 50 33 PM.jpg", "Photo Feb 11 2026, 10 14 50 PM.jpg", "Photo Mar 03 2026, 11 46 05 PM.jpg", "Photo Feb 24 2026, 9 39 03 PM.jpg", "Photo Mar 05 2026, 11 45 05 PM.jpg", "Photo Feb 12 2026, 8 57 15 AM.jpg", "Photo Feb 26 2026, 9 49 30 PM.jpg", "Photo Feb 19 2026, 8 18 55 PM.jpg", "Photo Feb 13 2026, 6 27 14 PM.jpg", "Photo Feb 09 2026, 11 27 07 PM.jpg", "Photo Feb 10 2026, 3 45 21 AM.jpg", "Photo Mar 02 2026, 11 08 50 PM.jpg", "Photo Feb 10 2026, 3 45 10 AM.jpg", "Photo Feb 20 2026, 7 58 14 PM.jpg", "Photo Feb 13 2026, 6 27 47 PM.jpg", "Photo Mar 05 2026, 11 42 54 PM.jpg", "Photo Mar 03 2026, 11 47 02 PM.jpg", "Photo Feb 12 2026, 9 05 36 AM.jpg", "Photo Feb 10 2026, 1 51 10 AM.jpg", "Photo Feb 27 2026, 10 25 31 PM.jpg", "Photo Feb 18 2026, 9 00 05 PM.jpg", "Photo Feb 13 2026, 6 28 45 PM.jpg", "Photo Feb 11 2026, 10 13 52 PM.jpg", "Photo Mar 05 2026, 11 42 45 PM.jpg", "Photo Feb 13 2026, 6 26 59 PM.jpg", "Photo Feb 10 2026, 1 51 04 AM.jpg", "Photo Mar 05 2026, 11 45 18 PM.jpg", "Photo Mar 05 2026, 11 42 40 PM.jpg", "Photo Mar 05 2026, 11 42 25 PM.jpg", "Photo Mar 02 2026, 11 08 41 PM.jpg", "Photo Feb 10 2026, 1 51 30 AM.jpg", "Photo Feb 18 2026, 9 00 34 PM.jpg", "Photo Mar 02 2026, 11 09 21 PM.jpg", "Photo Feb 17 2026, 8 24 34 PM.jpg", "Photo Feb 10 2026, 3 46 51 AM.jpg", "Photo Feb 12 2026, 9 00 17 AM.jpg", "Photo Feb 17 2026, 8 25 58 PM.jpg", "Photo Feb 26 2026, 9 55 44 PM.jpg", "Photo Feb 10 2026, 1 51 14 AM.jpg", "Photo Mar 03 2026, 11 47 36 PM.jpg", "Photo Feb 27 2026, 10 24 50 PM.jpg", "Photo Feb 10 2026, 3 45 00 AM.jpg", "Photo Mar 03 2026, 11 47 12 PM.jpg", "Photo Feb 26 2026, 9 51 27 PM.jpg", "Photo Feb 23 2026, 10 06 06 PM.jpg", "Photo Mar 05 2026, 11 44 16 PM.jpg", "Photo Feb 23 2026, 10 05 16 PM.jpg", "Photo Feb 27 2026, 10 24 55 PM.jpg", "Photo Feb 26 2026, 9 54 39 PM.jpg", "Photo Feb 20 2026, 7 54 46 PM.jpg", "Photo Feb 11 2026, 10 13 56 PM.jpg", "Photo Feb 12 2026, 9 00 08 AM.jpg", "Photo Mar 03 2026, 11 47 31 PM.jpg", "Photo Feb 20 2026, 7 55 57 PM.jpg", "Photo Feb 23 2026, 10 04 40 PM.jpg", "Photo Feb 12 2026, 9 02 36 AM.jpg", "Photo Feb 13 2026, 6 27 07 PM.jpg", "Photo Feb 12 2026, 9 02 09 AM.jpg", "Photo Feb 23 2026, 10 05 02 PM.jpg", "Photo Mar 02 2026, 11 08 33 PM.jpg", "Photo Mar 02 2026, 11 11 39 PM.jpg", "Photo Feb 20 2026, 7 55 26 PM.jpg", "Photo Feb 12 2026, 9 05 42 AM.jpg", "Photo Feb 23 2026, 10 08 44 PM.jpg", "Photo Feb 12 2026, 9 04 02 AM.jpg", "Photo Feb 12 2026, 9 01 30 AM.jpg", "Photo Mar 02 2026, 11 11 30 PM.jpg", "Photo Feb 12 2026, 9 04 11 AM.jpg", "Photo Feb 10 2026, 3 45 30 AM.jpg", "Photo Feb 24 2026, 9 38 58 PM.jpg", "Photo Feb 12 2026, 9 07 36 AM.jpg", "Photo Mar 05 2026, 11 44 10 PM.jpg", "Photo Feb 23 2026, 10 08 02 PM.jpg", "Photo Feb 27 2026, 10 25 25 PM.jpg", "Photo Feb 26 2026, 9 55 34 PM.jpg", "Photo Feb 11 2026, 10 14 07 PM.jpg", "Photo Feb 24 2026, 9 39 44 PM.jpg", "Photo Feb 26 2026, 9 50 02 PM.jpg", "Photo Feb 19 2026, 6 16 08 PM.jpg", "Photo Feb 12 2026, 8 58 33 AM.jpg", "Photo Mar 02 2026, 11 08 58 PM.jpg", "Photo Feb 11 2026, 10 12 43 PM.jpg", "Photo Feb 23 2026, 10 04 16 PM.jpg", "Photo Feb 11 2026, 10 13 48 PM.jpg", "Photo Mar 05 2026, 11 42 28 PM.jpg", "Photo Feb 24 2026, 9 39 07 PM.jpg", "Photo Mar 02 2026, 11 10 51 PM.jpg", "Photo Feb 23 2026, 10 08 26 PM.jpg", "Photo Mar 02 2026, 11 11 35 PM.jpg", "Photo Feb 12 2026, 8 59 37 AM.jpg", "Photo Feb 24 2026, 9 40 09 PM.jpg", "Photo Feb 24 2026, 9 38 54 PM.jpg", "Photo Mar 03 2026, 11 47 19 PM.jpg", "Photo Feb 10 2026, 3 45 59 AM.jpg", "Photo Feb 19 2026, 6 16 49 PM.jpg", "Photo Feb 12 2026, 8 58 47 AM.jpg", "Photo Feb 20 2026, 7 57 48 PM.jpg", "Photo Feb 12 2026, 8 58 56 AM.jpg"];
+
+    const BATCH_SIZE = 28;
+    let currentIndex = 0;
+    let loadedImages = [];
+    const grid = document.getElementById('masonry-grid');
+    const loadMoreBtn = document.getElementById('load-more-btn');
+    const countEl = document.getElementById('images-count');
+
+    function createImageElement(filename, index) {
+      const div = document.createElement('div');
+      div.className = 'masonry-item';
+      div.setAttribute('data-index', index);
+      div.onclick = () => openLightbox(index);
+
+      const img = document.createElement('img');
+      img.alt = 'KCU Student Trading Result';
+      img.loading = 'lazy';
+      img.decoding = 'async';
+      img.src = 'images/gains/' + encodeURIComponent(filename);
+      img.onload = () => {
+        requestAnimationFrame(() => div.classList.add('visible'));
+      };
+
+      div.appendChild(img);
+      return div;
+    }
+
+    function loadMore() {
+      const end = Math.min(currentIndex + BATCH_SIZE, ALL_IMAGES.length);
+      const fragment = document.createDocumentFragment();
+
+      for (let i = currentIndex; i < end; i++) {
+        const el = createImageElement(ALL_IMAGES[i], i);
+        fragment.appendChild(el);
+        loadedImages.push(ALL_IMAGES[i]);
+      }
+
+      grid.appendChild(fragment);
+      currentIndex = end;
+
+      countEl.textContent = 'Showing ' + currentIndex + ' of ' + ALL_IMAGES.length + ' results';
+
+      if (currentIndex >= ALL_IMAGES.length) {
+        loadMoreBtn.disabled = true;
+        loadMoreBtn.textContent = 'All Results Loaded';
+      }
+    }
+
+    // Initial load
+    loadMore();
+
+    // ===== Lightbox =====
+    let lightboxIndex = 0;
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+
+    function openLightbox(index) {
+      lightboxIndex = index;
+      lightboxImg.src = 'images/gains/' + encodeURIComponent(ALL_IMAGES[index]);
+      lightbox.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox(e) {
+      if (e.target === lightbox || e.target.classList.contains('lightbox-close')) {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    }
+
+    function navigateLightbox(e, dir) {
+      e.stopPropagation();
+      lightboxIndex = (lightboxIndex + dir + ALL_IMAGES.length) % ALL_IMAGES.length;
+      lightboxImg.src = 'images/gains/' + encodeURIComponent(ALL_IMAGES[lightboxIndex]);
+      // Load more if needed
+      if (lightboxIndex >= currentIndex) {
+        loadMore();
+      }
+    }
+
+    // Keyboard nav
+    document.addEventListener('keydown', (e) => {
+      if (!lightbox.classList.contains('active')) return;
+      if (e.key === 'Escape') { lightbox.classList.remove('active'); document.body.style.overflow = ''; }
+      if (e.key === 'ArrowLeft') navigateLightbox(e, -1);
+      if (e.key === 'ArrowRight') navigateLightbox(e, 1);
+    });
+
+    // ===== Animated Counters =====
+    function animateCounters() {
+      document.querySelectorAll('.stat-number[data-target]').forEach(el => {
+        const target = parseInt(el.dataset.target);
+        const suffix = el.dataset.suffix || '';
+        const prefix = el.dataset.prefix || '';
+        const duration = 2000;
+        const start = performance.now();
+
+        function update(now) {
+          const elapsed = now - start;
+          const progress = Math.min(elapsed / duration, 1);
+          // Ease out cubic
+          const eased = 1 - Math.pow(1 - progress, 3);
+          const current = Math.round(eased * target);
+          el.textContent = prefix + current.toLocaleString() + suffix;
+          if (progress < 1) requestAnimationFrame(update);
+        }
+        requestAnimationFrame(update);
+      });
+    }
+
+    // ===== Video Testimonials =====
+    const ALL_VIDEOS = [
+      'testimonial-01.mp4', 'testimonial-02.mp4', 'testimonial-03.mp4', 'testimonial-04.mp4', 'testimonial-05.mp4', 'testimonial-06.mp4',
+      'testimonial-07.mp4', 'testimonial-08.mp4', 'testimonial-09.mp4', 'testimonial-10.mp4', 'testimonial-11.mp4', 'testimonial-12.mp4',
+      'testimonial-13.mp4', 'testimonial-14.mp4', 'testimonial-15.mp4', 'testimonial-16.mp4', 'testimonial-17.mp4', 'testimonial-18.mp4',
+      'testimonial-19.mp4', 'testimonial-20.mp4', 'testimonial-21.mp4', 'testimonial-22.mp4', 'testimonial-23.mp4', 'testimonial-24.mp4',
+      'testimonial-25.mp4', 'testimonial-26.mp4', 'testimonial-27.mp4', 'testimonial-28.mp4', 'testimonial-29.mp4', 'testimonial-30.mp4'
+    ];
+
+    const VIDEO_BATCH_SIZE = 6;
+    let currentVideoIndex = 0;
+    let loadedVideos = [];
+    const videoGrid = document.getElementById('video-grid');
+    const loadMoreVideosBtn = document.getElementById('load-more-videos-btn');
+    const videosCountEl = document.getElementById('videos-count');
+
+    function createVideoElement(filename, index) {
+      const div = document.createElement('div');
+      div.className = 'video-card reveal';
+      
+      div.innerHTML = `
+        <div class="video-embed">
+          <video controls preload="none" poster="">
+            <source src="videos/${filename}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="video-info">
+          <div class="testimonial-label">Student Testimonial</div>
+        </div>
+      `;
+
+      // Add reveal animation
+      requestAnimationFrame(() => div.classList.add('revealed'));
+      
+      return div;
+    }
+
+    function loadMoreVideos() {
+      const end = Math.min(currentVideoIndex + VIDEO_BATCH_SIZE, ALL_VIDEOS.length);
+      const fragment = document.createDocumentFragment();
+
+      for (let i = currentVideoIndex; i < end; i++) {
+        const el = createVideoElement(ALL_VIDEOS[i], i);
+        fragment.appendChild(el);
+        loadedVideos.push(ALL_VIDEOS[i]);
+      }
+
+      videoGrid.appendChild(fragment);
+      currentVideoIndex = end;
+
+      videosCountEl.textContent = 'Showing ' + currentVideoIndex + ' of ' + ALL_VIDEOS.length + ' video testimonials';
+
+      if (currentVideoIndex >= ALL_VIDEOS.length) {
+        loadMoreVideosBtn.disabled = true;
+        loadMoreVideosBtn.innerHTML = 'All Videos Loaded <svg width="16" height="16" viewBox="0 0 16 16" fill="none" style="display:inline-block;vertical-align:middle;"><path d="m9 12-4-4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+      }
+    }
+
+    // Load initial batch
+    loadMoreVideos();
+
+    // ===== Scroll Reveal =====
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    // Counter trigger
+    let countersFired = false;
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !countersFired) {
+          countersFired = true;
+          animateCounters();
+        }
+      });
+    }, { threshold: 0.3 });
+
+    const statsBar = document.querySelector('.stats-bar');
+    if (statsBar) statsObserver.observe(statsBar);
+  </script>
+</body>
+</html>
