@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apply — Kay Capitals University</title>
+<meta name="description" content="Apply for Kay Capitals University — a 6-month intensive day trading options mentorship. Limited spots available.">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:#0a0a0a;color:#f0f0f0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+
+/* ─── Utility ─── */
+.container{max-width:1080px;margin:0 auto;padding:0 24px}
+.section{padding:80px 0}
+.section-alt{background:#111}
+.gold{color:#d4a843}
+.text-center{text-align:center}
+
+/* ─── Buttons ─── */
+.btn{display:inline-block;background:#d4a843;color:#0a0a0a;font-weight:700;font-size:1.1rem;padding:16px 48px;border:none;border-radius:6px;cursor:pointer;text-decoration:none;text-transform:uppercase;letter-spacing:.08em;transition:background .2s,transform .15s}
+.btn:hover{background:#e2bc5e;transform:translateY(-2px)}
+.btn-lg{font-size:1.25rem;padding:20px 56px}
+
+/* ─── Section headings ─── */
+.sh{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:800;text-transform:uppercase;letter-spacing:.04em;margin-bottom:12px}
+.sh-sub{font-size:1.05rem;color:#aaa;max-width:640px;margin:0 auto 48px}
+
+/* ─── Hero ─── */
+.hero{padding:100px 0 60px;text-align:center}
+.hero h1{font-size:clamp(1.8rem,5vw,3rem);font-weight:900;text-transform:uppercase;letter-spacing:.03em;line-height:1.15;margin-bottom:20px}
+.hero p{font-size:clamp(1rem,2.5vw,1.2rem);color:#bbb;max-width:700px;margin:0 auto 40px}
+
+/* ─── Video player ─── */
+.video-wrap{position:relative;max-width:860px;margin:0 auto;border-radius:12px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.6)}
+.video-wrap video{width:100%;display:block;background:#000}
+.unmute-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.35);cursor:pointer;transition:opacity .3s}
+.unmute-overlay.hidden{opacity:0;pointer-events:none}
+.unmute-pill{background:rgba(255,255,255,.15);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.2);border-radius:40px;padding:14px 32px;display:flex;align-items:center;gap:10px;font-size:1rem;font-weight:600;color:#fff}
+.unmute-pill svg{width:22px;height:22px;fill:#fff}
+
+/* ─── CTA / Typeform ─── */
+.form-section{background:#111;padding:80px 0}
+.form-section h2{margin-bottom:40px}
+.typeform-wrap{max-width:720px;margin:0 auto;border-radius:12px;overflow:hidden;background:#1a1a1a}
+
+/* ─── Urgency ─── */
+.urgency{background:linear-gradient(135deg,#1a1507 0%,#0a0a0a 100%);border-top:1px solid #2a2210;border-bottom:1px solid #2a2210}
+.countdown{display:flex;justify-content:center;gap:24px;margin:32px 0}
+.cd-unit{text-align:center}
+.cd-num{font-size:clamp(2rem,6vw,3.2rem);font-weight:900;color:#d4a843;line-height:1}
+.cd-label{font-size:.75rem;text-transform:uppercase;letter-spacing:.12em;color:#888;margin-top:4px}
+.urgency-note{color:#999;font-size:.95rem;margin-bottom:32px}
+
+/* ─── Testimonial cards ─── */
+.testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px}
+.t-card{background:#161616;border:1px solid #222;border-radius:12px;padding:32px;position:relative}
+.t-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#d4a843,#b8902e);border-radius:12px 12px 0 0}
+.t-headline{font-size:1rem;font-weight:800;text-transform:uppercase;color:#d4a843;letter-spacing:.04em;margin-bottom:16px}
+.t-quote{font-size:.95rem;color:#ccc;font-style:italic;line-height:1.7;margin-bottom:20px}
+.t-attr{font-size:.8rem;color:#777;text-transform:uppercase;letter-spacing:.08em}
+
+/* ─── Gains grid ─── */
+.gains-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px}
+.gains-grid img{border-radius:8px;border:1px solid #222;width:100%;height:auto;transition:transform .2s}
+.gains-grid img:hover{transform:scale(1.03)}
+
+/* ─── What You Get ─── */
+.offer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px}
+.offer-card{background:#161616;border:1px solid #222;border-radius:12px;padding:36px 28px;text-align:center}
+.offer-num{font-size:3rem;font-weight:900;color:#d4a843;line-height:1;margin-bottom:8px}
+.offer-title{font-size:1.15rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;margin-bottom:14px}
+.offer-desc{font-size:.95rem;color:#aaa;line-height:1.65}
+
+/* ─── FAQ ─── */
+.faq-list{max-width:740px;margin:0 auto}
+.faq-item{border-bottom:1px solid #222}
+.faq-q{width:100%;background:none;border:none;color:#f0f0f0;font-size:1.05rem;font-weight:700;padding:22px 40px 22px 0;text-align:left;cursor:pointer;position:relative;font-family:inherit}
+.faq-q::after{content:'+';position:absolute;right:0;top:50%;transform:translateY(-50%);font-size:1.5rem;color:#d4a843;transition:transform .25s}
+.faq-item.open .faq-q::after{content:'−'}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease}
+.faq-item.open .faq-a{max-height:300px;padding-bottom:22px}
+.faq-a p{color:#aaa;font-size:.95rem;line-height:1.7}
+
+/* ─── Final CTA ─── */
+.final-cta{background:linear-gradient(180deg,#0a0a0a 0%,#111 100%);text-align:center;padding:80px 0}
+.final-cta p{color:#999;font-size:1.05rem;margin-bottom:32px}
+
+/* ─── Footer ─── */
+footer{background:#080808;border-top:1px solid #1a1a1a;padding:40px 0;text-align:center}
+footer .copy{font-size:.85rem;color:#666;margin-bottom:16px}
+footer .disclaimer{font-size:.72rem;color:#444;max-width:800px;margin:0 auto;line-height:1.7}
+
+/* ─── Mobile ─── */
+@media(max-width:600px){
+  .section{padding:56px 0}
+  .hero{padding:72px 0 40px}
+  .countdown{gap:16px}
+  .gains-grid{grid-template-columns:repeat(2,1fr)}
+  .testimonials-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- ════════ SECTION 1 : HERO ════════ -->
+<section class="hero">
+<div class="container">
+  <h1>Stop Guessing.<br>Start Trading With a <span class="gold">Proven Framework.</span></h1>
+  <p>Watch this video to see the process-driven framework that helps traders remove themselves as the single point of failure.</p>
+
+  <div class="video-wrap">
+    <video id="vsl" autoplay muted playsinline controlsList="nodownload" oncontextmenu="return false"
+      poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9'%3E%3Crect fill='%23000'/%3E%3C/svg%3E">
+      <source src="https://dl.dropboxusercontent.com/scl/fo/e81v6zn2c64mwgrl7niqc/AFdQUD7kSU-QTOiJ3DdDcW8/VSL.mp4?rlkey=10rsrqd1wf5rvmhucgkpm2wwq&dl=1" type="video/mp4">
+    </video>
+    <div class="unmute-overlay" id="unmuteOverlay">
+      <div class="unmute-pill">
+        <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 8.1v7.8a4.47 4.47 0 0 0 2.5-3.9zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1A9 9 0 0 0 14 3.2z"/></svg>
+        Click to unmute
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ════════ SECTION 2 : CTA + TYPEFORM ════════ -->
+<section class="form-section" id="apply">
+<div class="container text-center">
+  <h2 class="sh">Next Step: Start Your <span class="gold">Custom Trading Assessment</span></h2>
+  <div class="typeform-wrap">
+    <div data-tf-live="xvMyrcBy" data-tf-opacity="0" style="width:100%;height:580px;"></div>
+  </div>
+</div>
+</section>
+
+<!-- ════════ SECTION 3 : URGENCY ════════ -->
+<section class="urgency section">
+<div class="container text-center">
+  <h2 class="sh">Next Intake <span class="gold">Closing Soon</span></h2>
+  <div class="countdown" id="countdown">
+    <div class="cd-unit"><div class="cd-num" id="cd-d">0</div><div class="cd-label">Days</div></div>
+    <div class="cd-unit"><div class="cd-num" id="cd-h">0</div><div class="cd-label">Hours</div></div>
+    <div class="cd-unit"><div class="cd-num" id="cd-m">0</div><div class="cd-label">Minutes</div></div>
+    <div class="cd-unit"><div class="cd-num" id="cd-s">0</div><div class="cd-label">Seconds</div></div>
+  </div>
+  <p class="urgency-note">Applications are reviewed. Not everyone is accepted.</p>
+  <a href="#apply" class="btn btn-lg">Apply Now</a>
+</div>
+</section>
+
+<!-- ════════ SECTION 4 : STUDENT EXPERIENCES (TEXT) ════════ -->
+<section class="section section-alt">
+<div class="container text-center">
+  <h2 class="sh">Student <span class="gold">Experiences</span></h2>
+  <p class="sh-sub">Real words from real KCU members.</p>
+
+  <div class="testimonials-grid">
+    <div class="t-card">
+      <div class="t-headline">Student Retired His Whole Family From a $3,000 Account</div>
+      <p class="t-quote">"KCU has been extremely important in my life — in terms of confidence and understanding how the markets go and really proving to myself that I can do this. I've joined other groups. Really nothing compares to the educational background and the trainings that you provide. The accountability that we all put upon each other — we all have the same goal. We want to leave that rat race and provide a better life for our families."</p>
+      <div class="t-attr">Member of Kay Capitals University</div>
+    </div>
+
+    <div class="t-card">
+      <div class="t-headline">Student Makes $100K in 3 Weeks</div>
+      <p class="t-quote">"In all of my brokers accounts added together, I'm up about 20k since I started KCU — a little over a month ago. Without a doubt your program is way better than anything. All the modules, all your content — you explain everything really thoroughly and really well. Some of the best teachings that I've ever had since I became a full-time day trader. No other programs or mentorships even come close."</p>
+      <div class="t-attr">Member of Kay Capitals University</div>
+    </div>
+
+    <div class="t-card">
+      <div class="t-headline">Student Makes $260,000 in 7 Months</div>
+      <p class="t-quote">"My fifth week was green. I regained everything that I had lost and then ended positive. Then last week I had an $8,000 week. Monday was my biggest profit day at $2,300. The program far exceeds my expectations. You're not just a call-out group. You really want to make sure that we understand what we're doing. You give us the tools to trade for ourselves. 10 out of 10, definitely recommend."</p>
+      <div class="t-attr">Member of Kay Capitals University</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ════════ SECTION 5 : STUDENT RESULTS (GAINS) ════════ -->
+<section class="section">
+<div class="container text-center">
+  <h2 class="sh">Student <span class="gold">Results</span></h2>
+  <p class="sh-sub">Real P&amp;L screenshots from KCU members.</p>
+
+  <div class="gains-grid">
+    <img src="images/gains/thumbs/Photo%20Feb%2023%202026,%2010%2006%2023%20PM.png" alt="Student gain" loading="lazy">
+    <img src="images/gains/thumbs/Photo%20Feb%2012%202026,%209%2005%2036%20AM.png" alt="Student gain" loading="lazy">
+    <img src="images/gains/thumbs/Photo%20Feb%2019%202026,%206%2014%2042%20PM.png" alt="Student gain" loading="lazy">
+    <img src="images/gains/thumbs/Photo%20Feb%2012%202026,%208%2056%2031%20AM.png" alt="Student gain" loading="lazy">
+    <img src="images/gains/thumbs/Photo%20Feb%2023%202026,%2010%2004%2004%20PM.png" alt="Student gain" loading="lazy">
+    <img src="images/gains/thumbs/Photo%20Mar%2006%202026,%205%2010%2054%20AM.png" alt="Student gain" loading="lazy">
+    <img src="images/gains/thumbs/Photo%20Feb%2020%202026,%207%2054%2031%20PM.jpg" alt="Student gain" loading="lazy">
+    <img src="images/gains/thumbs/Photo%20Feb%2026%202026,%209%2049%2049%20PM.jpg" alt="Student gain" loading="lazy">
+    <img src="images/gains/thumbs/Photo%20Feb%2012%202026,%209%2007%2015%20AM.jpg" alt="Student gain" loading="lazy">
+    <img src="images/gains/thumbs/Photo%20Feb%2013%202026,%206%2028%2031%20PM.jpg" alt="Student gain" loading="lazy">
+  </div>
+</div>
+</section>
+
+<!-- ════════ SECTION 6 : WHAT YOU GET ════════ -->
+<section class="section section-alt">
+<div class="container text-center">
+  <h2 class="sh">What You'll <span class="gold">Get</span></h2>
+  <p class="sh-sub">Everything you need to trade with confidence and consistency.</p>
+
+  <div class="offer-grid">
+    <div class="offer-card">
+      <div class="offer-num">#1</div>
+      <div class="offer-title">Proven Trading System</div>
+      <p class="offer-desc">Learn the exact frameworks and strategies used by profitable KCU traders. No theory. Pure execution.</p>
+    </div>
+    <div class="offer-card">
+      <div class="offer-num">#2</div>
+      <div class="offer-title">Live Trading Sessions</div>
+      <p class="offer-desc">Trade alongside Somesh in real-time. See entries, exits, and risk management in action every single day.</p>
+    </div>
+    <div class="offer-card">
+      <div class="offer-num">#3</div>
+      <div class="offer-title">Personalized Mentorship</div>
+      <p class="offer-desc">Get direct feedback on your trades, your psychology, and your plan. This isn't a course — it's hands-on coaching.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ════════ SECTION 7 : FAQ ════════ -->
+<section class="section">
+<div class="container">
+  <h2 class="sh text-center">Frequently Asked <span class="gold">Questions</span></h2>
+  <p class="sh-sub text-center">Everything you need to know before applying.</p>
+
+  <div class="faq-list">
+    <div class="faq-item">
+      <button class="faq-q">What exactly is Kay Capitals University?</button>
+      <div class="faq-a"><p>KCU is a 6-month intensive mentorship. Live trading, strategies, risk management, psychology. Not a course with pre-recorded videos collecting dust. You trade with us daily.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">What do I learn?</button>
+      <div class="faq-a"><p>Proven options trading strategies, risk management frameworks, how to read charts with precision, trading psychology, and how to build consistency. Everything you need to trade profitably.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">Is this right for beginners?</button>
+      <div class="faq-a"><p>Yes. Whether you're brand new or been trading for years and still inconsistent, the system works. We break everything down from zero and build you up.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">How much does it cost?</button>
+      <div class="faq-a"><p>The mentorship is an investment in your trading career. Apply to find out current pricing and see if you qualify. We don't accept everyone.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q">What kind of results can I expect?</button>
+      <div class="faq-a"><p>Results depend on your effort, discipline, and how well you follow the system. Some students see results in weeks, others take months. We provide the framework — you provide the execution.</p></div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ════════ SECTION 8 : FINAL CTA ════════ -->
+<section class="final-cta">
+<div class="container">
+  <h2 class="sh">Ready to <span class="gold">Change Your Trading?</span></h2>
+  <p>Applications are reviewed. Not everyone is accepted.</p>
+  <a href="#apply" class="btn btn-lg">Apply Now</a>
+</div>
+</section>
+
+<!-- ════════ SECTION 9 : FOOTER ════════ -->
+<footer>
+<div class="container">
+  <p class="copy">&copy; 2026 KC Mastermind Pty Ltd. All Rights Reserved.</p>
+  <p class="disclaimer">KC Mastermind Pty Ltd provides education and training services only. We do not offer financial advice, investment services, business opportunities, or guaranteed income programs. Any results, testimonials, or examples presented are illustrative only and are not typical. Outcomes vary based on individual effort, experience, market conditions, and other external factors. We make no representations or guarantees regarding earnings, profitability, or success. Trading and investing involve substantial risk. You may lose some or all of your capital. Always conduct your own due diligence and seek independent professional advice before making financial decisions.</p>
+</div>
+</footer>
+
+<!-- ─── Typeform SDK ─── -->
+<script src="https://embed.typeform.com/next/embed.js"></script>
+
+<script>
+/* ─── Unmute overlay ─── */
+(function(){
+  var v=document.getElementById('vsl'),o=document.getElementById('unmuteOverlay');
+  o.addEventListener('click',function(){
+    v.muted=false;
+    v.controls=true;
+    o.classList.add('hidden');
+  });
+  v.addEventListener('play',function(){
+    if(!v.muted)o.classList.add('hidden');
+  });
+})();
+
+/* ─── Countdown (3-day, cookie reset) ─── */
+(function(){
+  var KEY='kcu_cd_end';
+  function getEnd(){
+    var s=document.cookie.match('(?:^|; )'+KEY+'=([^;]*)');
+    if(s){var t=parseInt(s[1],10);if(t>Date.now())return t;}
+    var e=Date.now()+3*24*60*60*1000;
+    document.cookie=KEY+'='+e+';path=/;max-age='+3*24*60*60;
+    return e;
+  }
+  var end=getEnd();
+  function tick(){
+    var diff=Math.max(0,end-Date.now()),s=Math.floor(diff/1000);
+    document.getElementById('cd-d').textContent=Math.floor(s/86400);
+    document.getElementById('cd-h').textContent=Math.floor((s%86400)/3600);
+    document.getElementById('cd-m').textContent=Math.floor((s%3600)/60);
+    document.getElementById('cd-s').textContent=s%60;
+    if(diff<=0){end=getEnd();}
+  }
+  tick();setInterval(tick,1000);
+})();
+
+/* ─── FAQ accordion ─── */
+document.querySelectorAll('.faq-q').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    var item=btn.parentElement;
+    document.querySelectorAll('.faq-item').forEach(function(el){if(el!==item)el.classList.remove('open');});
+    item.classList.toggle('open');
+  });
+});
+</script>
+</body>
+</html>
