@@ -28,21 +28,21 @@ img{max-width:100%;display:block}
 .sh-sub{font-size:1.05rem;color:#aaa;max-width:640px;margin:0 auto 48px}
 
 /* ─── Hero ─── */
-.hero{padding:100px 0 60px;text-align:center}
+.hero{padding:60px 0 40px;text-align:center}
 .hero h1{font-size:clamp(1.8rem,5vw,3rem);font-weight:900;text-transform:uppercase;letter-spacing:.03em;line-height:1.15;margin-bottom:20px}
 .hero p{font-size:clamp(1rem,2.5vw,1.2rem);color:#bbb;max-width:700px;margin:0 auto 40px}
 
 /* ─── Video player ─── */
-.video-wrap{position:relative;max-width:860px;margin:0 auto;border-radius:12px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.6)}
-.video-wrap video{width:100%;display:block;background:#000}
+.video-wrap{position:relative;max-width:100%;margin:0 auto;border-radius:12px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.6)}
+.video-wrap video{width:100%;height:auto;display:block;background:#000;object-fit:contain}
 .unmute-overlay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.35);cursor:pointer;transition:opacity .3s}
 .unmute-overlay.hidden{opacity:0;pointer-events:none}
 .unmute-pill{background:rgba(255,255,255,.15);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.2);border-radius:40px;padding:14px 32px;display:flex;align-items:center;gap:10px;font-size:1rem;font-weight:600;color:#fff}
 .unmute-pill svg{width:22px;height:22px;fill:#fff}
 
 /* ─── CTA / Typeform ─── */
-.form-section{background:#111;padding:80px 0}
-.form-section h2{margin-bottom:40px}
+.form-section{background:#111;padding:48px 0}
+.form-section h2{margin-bottom:24px}
 .typeform-wrap{max-width:720px;margin:0 auto;border-radius:12px;overflow:hidden;background:#1a1a1a}
 
 /* ─── Urgency ─── */
@@ -95,7 +95,7 @@ footer .disclaimer{font-size:.72rem;color:#444;max-width:800px;margin:0 auto;lin
 /* ─── Mobile ─── */
 @media(max-width:600px){
   .section{padding:56px 0}
-  .hero{padding:72px 0 40px}
+  .hero{padding:40px 0 24px}
   .countdown{gap:16px}
   .gains-grid{grid-template-columns:repeat(2,1fr)}
   .testimonials-grid{grid-template-columns:1fr}
