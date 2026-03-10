@@ -353,7 +353,7 @@
         item.className = 'photo-item';
         item.dataset.index = i;
         item.onclick = (function(idx) { return function() { openLightbox(idx); }; })(i);
-        item.innerHTML = '<img loading="lazy" src="images/gains/thumbs/' + fname + '" alt="Student gain screenshot">';
+        item.innerHTML = '<img loading="lazy" src="images/gains/' + fname + '" alt="Student gain screenshot">';
         grid.appendChild(item);
       }
       photosShown = end;
