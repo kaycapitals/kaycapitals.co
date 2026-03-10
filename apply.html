@@ -63,8 +63,8 @@ img{max-width:100%;display:block}
 .t-attr{font-size:.8rem;color:#777;text-transform:uppercase;letter-spacing:.08em}
 
 /* ─── Gains grid ─── */
-.gains-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;max-width:800px;margin:0 auto}
-.gains-grid img{border-radius:8px;border:1px solid #222;width:100%;height:auto;display:block;transition:transform .2s}
+.gains-grid{column-count:2;column-gap:12px;max-width:800px;margin:0 auto}
+.gains-grid img{border-radius:8px;border:1px solid #222;width:100%;display:block;margin-bottom:12px;break-inside:avoid;transition:transform .2s}
 .gains-grid img:hover{transform:scale(1.03)}
 
 /* ─── What You Get ─── */
@@ -98,7 +98,7 @@ footer .disclaimer{font-size:.72rem;color:#444;max-width:800px;margin:0 auto;lin
   .section{padding:56px 0}
   .hero{padding:40px 0 24px}
   .countdown{gap:16px}
-  .gains-grid{grid-template-columns:repeat(2,1fr)}
+  .gains-grid{column-count:2;column-gap:10px}
   .testimonials-grid{grid-template-columns:1fr}
 }
 </style>
