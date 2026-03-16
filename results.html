@@ -24,6 +24,54 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <style>
+    /* === Intro Video === */
+    .intro-video-section {
+      padding: 4rem 0 2rem;
+      background: radial-gradient(ellipse at 50% 0%, rgba(212,175,55,.06) 0%, transparent 60%);
+    }
+    .intro-video-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(212,175,55,.2);
+      box-shadow: 0 8px 40px rgba(0,0,0,.4);
+    }
+
+    /* === Featured Stories === */
+    .featured-section { padding: 4rem 0 2rem; }
+    .featured-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .featured-card {
+      background: #161616;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid rgba(212,175,55,.12);
+      transition: border-color .2s, transform .2s;
+    }
+    .featured-card:hover {
+      border-color: rgba(212,175,55,.35);
+      transform: translateY(-2px);
+    }
+    .featured-title {
+      padding: .9rem 1.1rem;
+      font-size: .85rem;
+      font-weight: 700;
+      letter-spacing: .04em;
+      color: #D4AF37;
+      text-transform: uppercase;
+      border-bottom: 1px solid rgba(212,175,55,.1);
+    }
+    @media (max-width: 768px) {
+      .featured-grid { grid-template-columns: 1fr; }
+      .intro-video-section { padding: 2rem 0 1rem; }
+    }
+
     /* === Results Page Styles === */
 
     /* Hero */
@@ -156,6 +204,108 @@
   </style>
 </head>
 <body>
+
+  <!-- Wistia scripts -->
+  <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+
+  <!-- Intro Video -->
+  <section class="intro-video-section">
+    <div class="container">
+      <div class="intro-video-wrap">
+        <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+          <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+            <div class="wistia_embed wistia_async_hvpjfg31b0 videoFoam=true" style="height:100%;position:relative;width:100%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Stories -->
+  <section class="featured-section">
+    <div class="container">
+      <div class="section-header" style="text-align:center;margin-bottom:3rem;">
+        <p class="section-label">Full Interviews</p>
+        <h2 class="section-title">Student Success Stories</h2>
+        <p class="section-subtitle" style="margin:0 auto;">Real students. Real transformations. Watch their full stories.</p>
+      </div>
+      <div class="featured-grid">
+
+        <div class="featured-card">
+          <div class="featured-title">STUDENT RETIRED HIS WHOLE FAMILY</div>
+          <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+            <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+              <div class="wistia_embed wistia_async_ffr3ydmeg4 videoFoam=true" style="height:100%;position:relative;width:100%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="featured-card">
+          <div class="featured-title">STUDENT TURNS $2,000 TO $112,000</div>
+          <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+            <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+              <div class="wistia_embed wistia_async_5wc0ss35p0 videoFoam=true" style="height:100%;position:relative;width:100%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="featured-card">
+          <div class="featured-title">STUDENT TURNS $550 TO $63,000 IN 10 WEEKS</div>
+          <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+            <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+              <div class="wistia_embed wistia_async_wafumefdba videoFoam=true" style="height:100%;position:relative;width:100%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="featured-card">
+          <div class="featured-title">STUDENT MAKES $260,000 IN PROFITS</div>
+          <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+            <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+              <div class="wistia_embed wistia_async_7r0so0hob0 videoFoam=true" style="height:100%;position:relative;width:100%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="featured-card">
+          <div class="featured-title">STUDENT MAKES $50,000 SINCE JOINED</div>
+          <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+            <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+              <div class="wistia_embed wistia_async_zvtfrv421y videoFoam=true" style="height:100%;position:relative;width:100%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="featured-card">
+          <div class="featured-title">STUDENT MAKES $60,000 IN 5 WEEKS</div>
+          <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+            <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+              <div class="wistia_embed wistia_async_ir0vm6yjp3 videoFoam=true" style="height:100%;position:relative;width:100%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="featured-card">
+          <div class="featured-title">STUDENT MAKES $200,000 IN A WEEK</div>
+          <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+            <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+              <div class="wistia_embed wistia_async_h7meandai6 videoFoam=true" style="height:100%;position:relative;width:100%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="featured-card">
+          <div class="featured-title">STUDENT MAKES $50,000 IN 2 MONTHS</div>
+          <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
+            <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+              <div class="wistia_embed wistia_async_6z9yak7yyv videoFoam=true" style="height:100%;position:relative;width:100%;"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
 
   <!-- Hero -->
   <section class="results-hero">
