@@ -38,6 +38,21 @@
       box-shadow: 0 8px 40px rgba(0,0,0,.4);
     }
 
+    /* Play overlay for lazy thumbnails */
+    .wistia-play-overlay {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; z-index: 2;
+      background: rgba(0,0,0,.3);
+      transition: background .2s;
+    }
+    .wistia-play-overlay:hover { background: rgba(0,0,0,.15); }
+    .wistia-thumb {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+    }
+
     /* === Featured Stories === */
     .featured-section { padding: 4rem 0 2rem; }
     .featured-grid {
@@ -205,16 +220,15 @@
 </head>
 <body>
 
-  <!-- Wistia scripts -->
-  <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-
   <!-- Intro Video -->
   <section class="intro-video-section">
     <div class="container">
       <div class="intro-video-wrap">
-        <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
-          <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-            <div class="wistia_embed wistia_async_hvpjfg31b0 videoFoam=true" style="height:100%;position:relative;width:100%;"></div>
+        <div class="wistia-lazy" data-wistia-id="hvpjfg31b0">
+          <div style="padding:56.25% 0 0 0;position:relative;background:#000;border-radius:12px;">
+            <div class="wistia-play-overlay">
+              <svg width="72" height="72" viewBox="0 0 72 72" fill="none"><circle cx="36" cy="36" r="36" fill="rgba(212,175,55,.85)"/><polygon points="28,20 56,36 28,52" fill="#000"/></svg>
+            </div>
           </div>
         </div>
       </div>
@@ -229,81 +243,7 @@
         <h2 class="section-title">Student Success Stories</h2>
         <p class="section-subtitle" style="margin:0 auto;">Real students. Real transformations. Watch their full stories.</p>
       </div>
-      <div class="featured-grid">
-
-        <div class="featured-card">
-          <div class="featured-title">STUDENT RETIRED HIS WHOLE FAMILY</div>
-          <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
-            <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-              <div class="wistia_embed wistia_async_ffr3ydmeg4 videoFoam=true" style="height:100%;position:relative;width:100%;"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="featured-card">
-          <div class="featured-title">STUDENT TURNS $2,000 TO $112,000</div>
-          <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
-            <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-              <div class="wistia_embed wistia_async_5wc0ss35p0 videoFoam=true" style="height:100%;position:relative;width:100%;"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="featured-card">
-          <div class="featured-title">STUDENT TURNS $550 TO $63,000 IN 10 WEEKS</div>
-          <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
-            <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-              <div class="wistia_embed wistia_async_wafumefdba videoFoam=true" style="height:100%;position:relative;width:100%;"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="featured-card">
-          <div class="featured-title">STUDENT MAKES $260,000 IN PROFITS</div>
-          <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
-            <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-              <div class="wistia_embed wistia_async_7r0so0hob0 videoFoam=true" style="height:100%;position:relative;width:100%;"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="featured-card">
-          <div class="featured-title">STUDENT MAKES $50,000 SINCE JOINED</div>
-          <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
-            <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-              <div class="wistia_embed wistia_async_zvtfrv421y videoFoam=true" style="height:100%;position:relative;width:100%;"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="featured-card">
-          <div class="featured-title">STUDENT MAKES $60,000 IN 5 WEEKS</div>
-          <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
-            <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-              <div class="wistia_embed wistia_async_ir0vm6yjp3 videoFoam=true" style="height:100%;position:relative;width:100%;"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="featured-card">
-          <div class="featured-title">STUDENT MAKES $200,000 IN A WEEK</div>
-          <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
-            <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-              <div class="wistia_embed wistia_async_h7meandai6 videoFoam=true" style="height:100%;position:relative;width:100%;"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="featured-card">
-          <div class="featured-title">STUDENT MAKES $50,000 IN 2 MONTHS</div>
-          <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
-            <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-              <div class="wistia_embed wistia_async_6z9yak7yyv videoFoam=true" style="height:100%;position:relative;width:100%;"></div>
-            </div>
-          </div>
-        </div>
-
-      </div>
+      <div class="featured-grid" id="featuredGrid"></div>
     </div>
   </section>
 
@@ -519,8 +459,89 @@
       else if (e.key === 'ArrowRight') { navLightbox(e, 1); }
     });
 
+    /* === FEATURED STORIES (lazy Wistia) === */
+    var FEATURED = [
+      { id: 'ffr3ydmeg4', title: 'STUDENT RETIRED HIS WHOLE FAMILY' },
+      { id: '5wc0ss35p0', title: 'STUDENT TURNS $2,000 TO $112,000' },
+      { id: 'wafumefdba', title: 'STUDENT TURNS $550 TO $63,000 IN 10 WEEKS' },
+      { id: '7r0so0hob0', title: 'STUDENT MAKES $260,000 IN PROFITS' },
+      { id: 'zvtfrv421y', title: 'STUDENT MAKES $50,000 SINCE JOINED' },
+      { id: 'ir0vm6yjp3', title: 'STUDENT MAKES $60,000 IN 5 WEEKS' },
+      { id: 'h7meandai6', title: 'STUDENT MAKES $200,000 IN A WEEK' },
+      { id: '6z9yak7yyv', title: 'STUDENT MAKES $50,000 IN 2 MONTHS' }
+    ];
+
+    function buildFeaturedGrid() {
+      var grid = document.getElementById('featuredGrid');
+      if (!grid) return;
+      FEATURED.forEach(function(v) {
+        var card = document.createElement('div');
+        card.className = 'featured-card';
+        card.innerHTML =
+          '<div class="featured-title">' + v.title + '</div>' +
+          '<div class="wistia-lazy" data-wistia-id="' + v.id + '">' +
+            '<div style="padding:56.25% 0 0 0;position:relative;background:#000;">' +
+              '<img class="wistia-thumb" loading="lazy" src="https://embed-ssl.wistia.com/deliveries/' + v.id + '.jpg?image_crop_resized=640x360" alt="' + v.title + '" onerror="this.style.display=\'none\'">' +
+              '<div class="wistia-play-overlay">' +
+                '<svg width="56" height="56" viewBox="0 0 72 72" fill="none"><circle cx="36" cy="36" r="36" fill="rgba(212,175,55,.85)"/><polygon points="28,20 56,36 28,52" fill="#000"/></svg>' +
+              '</div>' +
+            '</div>' +
+          '</div>';
+        grid.appendChild(card);
+      });
+    }
+
+    /* Lazy-load Wistia: only load the player when user clicks or scrolls near */
+    var wistiaLoaded = false;
+    function loadWistiaScript(cb) {
+      if (wistiaLoaded) { if (cb) cb(); return; }
+      wistiaLoaded = true;
+      var s = document.createElement('script');
+      s.src = 'https://fast.wistia.com/assets/external/E-v1.js';
+      s.async = true;
+      s.onload = function() { if (cb) cb(); };
+      document.head.appendChild(s);
+    }
+
+    function activateWistia(el) {
+      var id = el.dataset.wistiaId;
+      if (el.dataset.activated) return;
+      el.dataset.activated = '1';
+      loadWistiaScript(function() {
+        el.innerHTML =
+          '<div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">' +
+            '<div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">' +
+              '<div class="wistia_embed wistia_async_' + id + ' videoFoam=true autoPlay=true" style="height:100%;position:relative;width:100%;"></div>' +
+            '</div>' +
+          '</div>';
+      });
+    }
+
+    function setupLazyWistia() {
+      /* Click-to-play for all lazy wistia containers */
+      document.querySelectorAll('.wistia-lazy').forEach(function(el) {
+        el.addEventListener('click', function() { activateWistia(el); });
+      });
+
+      /* Auto-activate intro video when it enters viewport */
+      var introEl = document.querySelector('.intro-video-section .wistia-lazy');
+      if (introEl && 'IntersectionObserver' in window) {
+        var obs = new IntersectionObserver(function(entries) {
+          entries.forEach(function(e) {
+            if (e.isIntersecting) {
+              activateWistia(e.target);
+              obs.unobserve(e.target);
+            }
+          });
+        }, { rootMargin: '200px' });
+        obs.observe(introEl);
+      }
+    }
+
     /* === INIT === */
     function init() {
+      buildFeaturedGrid();
+      setupLazyWistia();
       loadMoreVideos();
       loadMorePhotos();
       animateCounters();
