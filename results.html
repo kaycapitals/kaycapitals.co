@@ -74,13 +74,14 @@
       transform: translateY(-2px);
     }
     .featured-title {
-      padding: .9rem 1.1rem;
-      font-size: .85rem;
-      font-weight: 700;
-      letter-spacing: .04em;
-      color: #D4AF37;
+      padding: 1.1rem 1.2rem .8rem;
+      font-size: clamp(1rem, 2.2vw, 1.35rem);
+      font-weight: 800;
+      letter-spacing: .02em;
+      color: #fff;
       text-transform: uppercase;
-      border-bottom: 1px solid rgba(212,175,55,.1);
+      text-align: center;
+      line-height: 1.25;
     }
     @media (max-width: 768px) {
       .featured-grid { grid-template-columns: 1fr; }
@@ -481,7 +482,7 @@
           '<div class="featured-title">' + v.title + '</div>' +
           '<div class="wistia-lazy" data-wistia-id="' + v.id + '">' +
             '<div style="padding:56.25% 0 0 0;position:relative;background:#000;">' +
-              '<img class="wistia-thumb" loading="lazy" src="https://embed-ssl.wistia.com/deliveries/' + v.id + '.jpg?image_crop_resized=640x360" alt="' + v.title + '" onerror="this.style.display=\'none\'">' +
+              '<img class="wistia-thumb" loading="lazy" src="images/featured/' + v.id + '.jpg" alt="' + v.title + '">' +
               '<div class="wistia-play-overlay">' +
                 '<svg width="56" height="56" viewBox="0 0 72 72" fill="none"><circle cx="36" cy="36" r="36" fill="rgba(212,175,55,.85)"/><polygon points="28,20 56,36 28,52" fill="#000"/></svg>' +
               '</div>' +
