@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onboarding Step 1</title>
+  <meta name="description" content="Onboarding Step 1 - Kay Capitals University">
+  <meta name="robots" content="noindex">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Onboarding Step 1">
+  <meta property="og:description" content="Onboarding Step 1 - Kay Capitals University">
+  <meta property="og:image" content="https://statics.myclickfunnels.com/image/444278/file/a38ed34a5bf9ee38e4e9482c43aebaeb.jpg">
+
+  <link rel="icon" type="image/x-icon" href="https://statics.myclickfunnels.com/image/444277/file/93a4faf7cc71cc7525a3c23d60484ff2.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;800&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      width: 100%;
+      min-height: 100vh;
+      background: rgb(253, 253, 253);
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      color: #000;
+    }
+
+    .page-wrapper {
+      width: 100%;
+      padding: 40px 20px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 1046px;
+      border: 1px solid #5C5C5C;
+      box-shadow: -35px -31px 29px -16px #000000;
+      background: #fff;
+      padding: 32px 28px;
+    }
+
+    /* Headline */
+    h1.main-headline {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 800;
+      font-size: clamp(1.4rem, 3vw, 2.2rem);
+      line-height: 130%;
+      letter-spacing: 0.02rem;
+      color: #000;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Video wrapper */
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%; /* 16:9 */
+      background: #000;
+      margin-bottom: 16px;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* Mobile arrow image */
+    .mobile-arrow {
+      display: none;
+      width: 11%;
+      margin: 0 auto 4px;
+    }
+
+    /* "Click here to Unmute!" - mobile only */
+    .mobile-unmute {
+      display: none;
+      text-align: center;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 800;
+      font-size: 0.95rem;
+      color: rgb(20, 138, 255);
+      margin-bottom: 10px;
+    }
+
+    /* Body text */
+    .body-text {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 0.85rem;
+      line-height: 150%;
+      color: #000;
+      text-align: center;
+      margin-bottom: 0;
+    }
+
+    /* Footer row */
+    .footer-row {
+      width: 100%;
+      max-width: 1170px;
+      margin-top: 16px;
+      text-align: center;
+    }
+
+    .footer-row p {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 0.65rem;
+      line-height: 150%;
+      color: #000;
+    }
+
+    .footer-row a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    .footer-row a:hover {
+      text-decoration: underline;
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 770px) {
+      .card {
+        box-shadow: none;
+        padding: 24px 16px;
+      }
+
+      h1.main-headline {
+        font-size: 1.35rem;
+        letter-spacing: 0;
+        line-height: 140%;
+      }
+
+      .mobile-arrow {
+        display: block;
+        width: 40%;
+      }
+
+      .mobile-unmute {
+        display: block;
+      }
+
+      .body-text {
+        font-size: 0.85rem;
+        letter-spacing: 0;
+        line-height: 140%;
+      }
+
+      .footer-row p {
+        font-size: 0.8rem;
+        line-height: 140%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="card">
+
+      <!-- Headline -->
+      <h1 class="main-headline">Step 1: Watch This QUICK Video 🔥</h1>
+
+      <!-- Wistia video embed -->
+      <div class="video-container">
+        <iframe
+          src="//fast.wistia.net/embed/iframe/94ilryhq1d?autoplay=0&wmode=transparent"
+          allowtransparency="true"
+          scrolling="no"
+          allowfullscreen
+          mozallowfullscreen
+          webkitallowfullscreen
+          oallowfullscreen
+          msallowfullscreen
+          wmode="opaque"
+          title="Onboarding Step 1 Video">
+        </iframe>
+      </div>
+
+      <!-- Mobile: arrow image + unmute text -->
+      <img
+        class="mobile-arrow"
+        src="https://images.clickfunnels.com/cdn-cgi/image/width=1000px,fit=scale-down,f=auto,q=80/https://statics.myclickfunnels.com/image/447217/file/6e05db132c165cd4df4f4f0055f8210c.png"
+        alt="Click to unmute arrow"
+      >
+      <p class="mobile-unmute">Click here to Unmute!</p>
+
+      <!-- Body copy -->
+      <p class="body-text">I explain the next steps inside this quick 3 minute long video.... LETS GET IT!</p>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-row">
+      <p>© 2025 - <a href="https://www.instagram.com/kaycapitals" target="_blank" rel="noopener noreferrer">@kaycapitals</a></p>
+    </div>
+  </div>
+</body>
+</html>
