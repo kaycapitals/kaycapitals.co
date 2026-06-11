@@ -1,4 +1,10 @@
 User-agent: *
 Allow: /
 Disallow: /private-invitation
+Disallow: /onboarding-step1
+Disallow: /onboarding-step1.html
+Disallow: /onboarding-step2
+Disallow: /onboarding-step2.html
+Disallow: /onboarding-step2-4
+Disallow: /onboarding-step2-4.html
 Sitemap: https://kaycapitals.co/sitemap.xml
