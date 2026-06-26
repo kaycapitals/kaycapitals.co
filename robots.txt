@@ -7,4 +7,6 @@ Disallow: /onboarding-step2
 Disallow: /onboarding-step2.html
 Disallow: /onboarding-step2-4
 Disallow: /onboarding-step2-4.html
+Disallow: /get-access-to-member-area
+Disallow: /get-access-to-member-area.html
 Sitemap: https://kaycapitals.co/sitemap.xml
